@@ -1,0 +1,17 @@
+{
+	"autoRelease": true,
+	"highlightTarget": true,
+	"stickyTarget": true,
+	"filterInvalidTargets": true,
+	"restartCastingWhenSwitchingSpell": false,
+	"collapseSpellHotbar": true,
+	"collapsedIndicators": true,
+	"indicateActiveHotbar": true,
+	"showFocusedHotbarOnly": false,
+	"lockHotbarOnRightClick": false,
+	"unlockHotbarOnEscape": false,
+	"alwaysShowFullTooltip": false,
+	"showSpellBindingTooltip": true,
+	"showSpellCastErrors": true,
+	"shoulderSurfingAdaptiveWhileUse": true
+}

@@ -1,0 +1,13 @@
+name = "Innicia-Server"
+author = "_gorbodoh_"
+version = "1.1.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "d9af10a4cb89d62adf8ac09ba2615c0fe37acca75c98fb675ea1b7fc7971edc7"
+
+[versions]
+fabric = "0.14.23"
+minecraft = "1.20.1"

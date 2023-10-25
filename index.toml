@@ -30,7 +30,7 @@ hash = "a8bb99e754fddd057fa98f6ff3561b3691e062509e8bede9ab06659bea88e591"
 
 [[files]]
 file = "config/adventurez.json5"
-hash = "ffcd0627907569f655dee7437345dea8075bc667d262a1c61e2b6de8781a30b8"
+hash = "1a9f1ba224075cb1a0748df5cae2bc923e3df33aec001292d70ba84753e1e974"
 
 [[files]]
 file = "config/balm-common.out.toml"
@@ -39,10 +39,6 @@ hash = "ebe5374574674a6987ac31e02669d129786ff09dc53b53f69347424fc0e3cee9"
 [[files]]
 file = "config/balm-common.toml"
 hash = "33606d9f309e655d6494dab932a061efe1f1f917a286bfc74b07f1876096464f"
-
-[[files]]
-file = "config/betteranimationscollection-client.toml"
-hash = "5fa4d1bb2a2c8d9dcc3ea6943f0b6daa46b27fa0c1d76dfc49aa1f3b51c73969"
 
 [[files]]
 file = "config/betterarcheologyconfig.properties"
@@ -197,10 +193,6 @@ file = "config/immersive_armors.json"
 hash = "8043a3e12e89c4d665d630276f28cdae12d61d1ca94b7fd498ddbcfed7318fe6"
 
 [[files]]
-file = "config/indium-renderer.properties"
-hash = "5c14bd0263d2ba5588c6bf0e3f46748ae49984e3a1c360a5ee9556147394adf6"
-
-[[files]]
 file = "config/lithium.properties"
 hash = "76765e8e5ff8e927d80beb0739aababcf36e7babfd94262f2afece256cc5cd2e"
 
@@ -318,7 +310,7 @@ hash = "0319f8905e49b64f536a72369dda73e2c858b7d062543133cb45367b3ffc110f"
 
 [[files]]
 file = "config/roughlyenoughitems/config.json5"
-hash = "05778e90a006835ef4dd76ccf133dfaa5e7b752d5643b0b508beaad95cafd637"
+hash = "5a35304b9b172a2abdb80e431b4433a4e95c090cde49c7fcce008d8277b7ca00"
 
 [[files]]
 file = "config/roughlyenoughitems/hints.json"
@@ -367,14 +359,6 @@ hash = "1254d390b0ab6b4da0ef0779fc79f2c15a60017107e3ae4238bbe3d0101344b1"
 [[files]]
 file = "config/simplyswords_main/weapon_attributes.json5"
 hash = "9220a83442ee1f88e7ec1656ae4cbc9eef51449a170ba40e29fc4775753dde78"
-
-[[files]]
-file = "config/sodium-mixins.properties"
-hash = "051558518a6f3350fadb1546346d937e7f78f69834a075bf91b59921f151cc26"
-
-[[files]]
-file = "config/sodium-options.json"
-hash = "971377be330405b5950f878070f62150cf71463ecccfd0419bda98513cd3b19d"
 
 [[files]]
 file = "config/soulsweapons.json"
@@ -555,22 +539,6 @@ hash = "0900e2beb2fda5476596be903f7995a66a4e9e1f9f5e426cc577f3ad87dfdd51"
 [[files]]
 file = "config/wunderreich/recipes.json"
 hash = "43225cf7990f32b1416ecc9a01e0eea6b0d99386f27cc4f39fc58da626334171"
-
-[[files]]
-file = "config/xaerominimap.txt"
-hash = "dcd381dbcdd109a4c53f9994000ff1a6182441f6bf86d238856f362e5b29d03c"
-
-[[files]]
-file = "config/xaerominimap_entities.json"
-hash = "42f4fc57f1c237132b1b23931e16bf292ad9e93c6605a6b0f63b3984343fcc06"
-
-[[files]]
-file = "config/xaeropatreon.txt"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
-file = "config/xaeroworldmap.txt"
-hash = "cc6ed1e4e7dec361fb0a95fb70e9250e5ef45255547df5fe91412cb0899d15a0"
 
 [[files]]
 file = "config/xp_storage/books.json"
@@ -901,7 +869,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "b903976c1e5c36f0eb88b3dca5f615a538f680f5d3d12ff08f544ce2299206c6"
+hash = "dfa389fc38ba0706e66328cfedad7bf029f4a2a986127489c42b64c6d9958e28"
 metafile = true
 
 [[files]]
@@ -1026,7 +994,7 @@ metafile = true
 
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
-hash = "613429169795748072fe2669af661f4e8b031725172c4e9d26c6a1b16e296c65"
+hash = "f5fd008ccf0b53cd4f32887902503e768e57da4dcc6065160e991c78d5fc017b"
 metafile = true
 
 [[files]]
@@ -1056,7 +1024,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "265ee1c03e7a25a984f32079edfc45a34edcef45dd2125b6cf8e56507cade89a"
+hash = "9714741fffea0cc85dbe3dc469b98a943569e94e7fc62d2d5c867ca3fa61bfc2"
 metafile = true
 
 [[files]]

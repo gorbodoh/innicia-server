@@ -115,7 +115,7 @@ worldGenStyle = "BIOME"
 blocksPerXpLevel = 1000
 
 # The base xp level cost when travelling between dimensions. Ignores block distance.
-dimensionalWarpXpCost = 10
+dimensionalWarpXpCost = 10.0
 
 # The multiplier applied to the base xp cost when teleporting to a global waystone through any method.
 globalWaystoneXpCostMultiplier = 0.0

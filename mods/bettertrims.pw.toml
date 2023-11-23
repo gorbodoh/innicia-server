@@ -1,13 +1,13 @@
 name = "BetterTrims"
-filename = "bettertrims-2.0.1.jar"
+filename = "bettertrims-2.0.5.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/98ytUvlc/versions/DGEEYceP/bettertrims-2.0.1.jar"
+url = "https://cdn.modrinth.com/data/98ytUvlc/versions/UStV1nrO/bettertrims-2.0.5.jar"
 hash-format = "sha1"
-hash = "ad9c8ef43fb8ed5001abb4c7702cab0b188201b6"
+hash = "56b965ddc7f7a0b9b49c31154cb9a57968d4a8f4"
 
 [update]
 [update.modrinth]
 mod-id = "98ytUvlc"
-version = "DGEEYceP"
+version = "UStV1nrO"

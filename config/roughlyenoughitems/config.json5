@@ -1,6 +1,8 @@
 {
 	"basics": {
-		"favorites": [],
+		"favorites": [
+			
+		],
 		"hiddenFavorites": [],
 		"displayHistory": [],
 		// Declares whether cheating mode is on.
@@ -60,7 +62,8 @@
 			"shouldFilterDisplays": true,
 			"filteringRules": [
 				"{id:\"roughlyenoughitems:manual\",rule:{}}",
-				"{id:\"roughlyenoughitems:basic\",rule:{}}"
+				"{id:\"roughlyenoughitems:basic\",rule:{}}",
+				"{id:\"roughlyenoughitems:hidden_from_recipe_viewers\",rule:{}}"
 			],
 			"filteringQuickCraftCategories": { },
 			"filteredStacks": []

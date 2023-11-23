@@ -9,9 +9,9 @@ Modrinth: https://modrinth.com/mod/vinery
 */
 {
 	// How many % of the normal wandering traders should be an wandering wine trader?
-	"wine_trader_chance": 20,
+	"wine_trader_chance": 5,
 	// Length of a year (in days).
-	"year_length_in_days": 16,
+	"year_length_in_days": 360,
 	// Whether or not the wine maker armor should give a set bonus, which makes your bone meal infinite.
 	"enable_wine_maker_set_bonus": true
 }

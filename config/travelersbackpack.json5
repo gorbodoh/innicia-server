@@ -4,6 +4,8 @@
 		"disableCrafting": false,
 		// Enables wearing backpack directly from ground
 		"enableBackpackBlockQuickEquip": true,
+		// Enables unequipping the backpack when player clicks with empty hand on the ground
+		"enableBackpackRightClickUnequip": false,
 		// Backpack immune to any damage source (lava, fire), can't be destroyed, never disappears as floating item
 		"invulnerableBackpack": true,
 		// List of items that can be put in tool slots (Use registry names, for example: minecraft:apple)
@@ -28,7 +30,7 @@
 		/* If true, backpack can only be worn by placing it in curios 'Back' slot
 		   WARNING - Remember to TAKE OFF BACKPACK BEFORE enabling or disabling this integration!! - if not you'll lose your backpack
 		*/
-		"trinketsIntegration": false
+		"trinketsIntegration": true
 	},
 	"world": {
 		// Enables backpacks spawning in loot chests
@@ -47,7 +49,7 @@
 			"minecraft:piglin"
 		],
 		// Defines spawn chance of entity with backpack (1 in [selected value])
-		"spawnChance": 500,
+		"spawnChance": 1000,
 		// List of backpacks that can spawn on overworld mobs
 		"overworldBackpacks": [
 			"travelersbackpack:standard",
@@ -96,7 +98,7 @@
 	},
 	"backpackAbilities": {
 		"enableBackpackAbilities": true,
-		"forceAbilityEnabled": false,
+		"forceAbilityEnabled": true,
 		// List of backpacks that are allowed to have an ability. DO NOT ADD anything to this list, because the game will crash, remove entries if backpack should not have ability
 		"allowedAbilities": [
 			"travelersbackpack:netherite",
@@ -138,6 +140,8 @@
 	"client": {
 		// Enables tool cycling via keybind (Default Z) + scroll combination, while backpack is worn
 		"enableToolCycling": true,
+		// Allows tool cycling using keybinding only (Default Z)
+		"disableScrollWheel": false,
 		// Enables tip, how to obtain a backpack, if there's no crafting recipe for it
 		"obtainTips": true,
 		// Render tools in tool slots on the backpack, while worn

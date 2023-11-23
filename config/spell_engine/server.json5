@@ -1,6 +1,6 @@
 {
-	// Spell caster items in the offhand can be used
-	"offhand_casting_allowed": false,
+	// Default `0.2` matches the same as movement speed during vanilla item usage (such as bow)
+	"movement_speed_while_casting_spell": 0.20000000298023224,
 	// Allow spells to bypass invulnerability frames. This is required in order for high attack frequency spells (such as beams) to work.
 	"bypass_iframes": true,
 	// Spell haste reduces the cooldown time of abilities
@@ -39,10 +39,10 @@
 	   (The first relation to be found for the target will be applied.)
 	*/
 	"player_relations": {
-		"minecraft:iron_golem": "NEUTRAL",
 		"minecraft:player": "SEMI_FRIENDLY",
-		"guardvillagers:guard": "SEMI_FRIENDLY",
-		"minecraft:villager": "SEMI_FRIENDLY"
+		"minecraft:villager": "SEMI_FRIENDLY",
+		"minecraft:iron_golem": "NEUTRAL",
+		"guardvillagers:guard": "SEMI_FRIENDLY"
 	},
 	// Relation to unspecified entities those are instance of PassiveEntity(Yarn)
 	"player_relation_to_passives": "HOSTILE",

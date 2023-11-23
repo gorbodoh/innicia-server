@@ -7,7 +7,7 @@
     "frameHasRandomEyeComment": "Enable/Disable whether or not ender eyes can naturally generate within the frames of the portal",
     "FRAME_HAS_RANDOM_EYE": false,
     "eyeBreakProbabilityComment": "Percentage chance of eyes breaking when thrown",
-    "EYE_BREAK_PROBABILITY": 10,
+    "EYE_BREAK_PROBABILITY": 0,
     "crypticAndEvilEyeComment": "Decides if the cryptic eye and the evil eye is obtainable in game",
     "IS_CRYPTIC_EYE_OBTAINABLE": true,
     "IS_EVIL_EYE_OBTAINABLE": true,

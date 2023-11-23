@@ -562,11 +562,11 @@ hash = "0d82bf35a7ae35056b210ab534d665f3bd58b4b0eca84f5f5a48349656948ef9"
 
 [[files]]
 file = "config/rpgdifficulty.json"
-hash = "35145298a53a58135e529d7c6cf9ca0d9c4f3d4928fc5d7acb88102f9918191d"
+hash = "72e009983fd1eba8dcb01036578ed916ec61843795c3d4b9ab2f374e2cefa51c"
 
 [[files]]
 file = "config/seasons.json"
-hash = "dd8ad8223a4698829f69e4e88bcbd7a8f15c9061ea3a0842d5aa9cdcdfd0f66c"
+hash = "81b3257d3ed8dc2d6fb36776be1f29a2cfc1897353ac1e5a3980fe24dfd18fcc"
 
 [[files]]
 file = "config/simplehats.json"
@@ -622,11 +622,11 @@ hash = "6239bef4c1aea23b447c4ac277a82fd1fb7fccddf272c83d349e1ed9e0715810"
 
 [[files]]
 file = "config/smallships-common.toml"
-hash = "76777810a8e27d9a7ca727808545e10188ce0fe203abd6d9fa5be8aa14c46123"
+hash = "4f8a050dde1c23d29ad5a50fd2ac3664827e2dfe3f5d859f81e7b3bb99955a1e"
 
 [[files]]
 file = "config/soulsweapons.json"
-hash = "4ea46e4ef210daa485c1e53f0716201c897db50d0ce8a398f90e92d36f118f46"
+hash = "55ac8c6a220df9fbda2251f1fcb984dac4f1dacfd1c9f5bdc7013ae65cee3086"
 
 [[files]]
 file = "config/spell_engine/client.json5"
@@ -658,11 +658,11 @@ hash = "3a7c29b912088667666557d9b19d82733bd56e96b8df0400b031587d15bdcbe3"
 
 [[files]]
 file = "config/starterkit.json5"
-hash = "c5c2f85ee5e5d597af6481b53edab999d9c0e289845dd663582b7617b1edad10"
+hash = "20dbdd8d77faf4294b1feb7cdd29a03dea1a31e5439ba040f1ce4f3b769499fb"
 
 [[files]]
 file = "config/starterkit/starterkit.txt"
-hash = "1d74f17d3197c61c98bcb380233517da71f0eba35d500c5e73f1513f4b61f818"
+hash = "d542fb929fe31fcb5aa424391f5d817243a43e97e3179fe722486c261a779143"
 
 [[files]]
 file = "config/supplementaries-client.json"
@@ -750,7 +750,7 @@ hash = "7885b862b10bf4b14d3103909971114a736d14a52e4a7994ace0d66a2474c14c"
 
 [[files]]
 file = "config/visualworkbench-client.toml"
-hash = "a48b352862f74f6fe3ab071e7e43e631618e9c5f68b5f992b591d4dc87992954"
+hash = "fc66e105d9cf16199fa5dc80a0d4a577b8dc96c6e20f982d621ec10681d888ff"
 
 [[files]]
 file = "config/voicechat/translations.properties"
@@ -774,7 +774,7 @@ hash = "58242ef3075b166845e0081281b01113a55b9d095104a68b167e7b4bc08b87c5"
 
 [[files]]
 file = "config/waystones-common.toml"
-hash = "86745558b2d0d53a61dba88bbacc18b5b99d0325d2ed9c5d05c7e3ee032bc4ae"
+hash = "f36a119e6414ba02a6a22704e14851d6dd7433164a0871f3963dade2eede6683"
 
 [[files]]
 file = "config/waystones-common.toml.bak1"

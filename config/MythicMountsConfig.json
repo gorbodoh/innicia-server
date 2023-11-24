@@ -7,47 +7,333 @@
         "enableFlyingGravity": true,
         "mountFriendlyFireProtection": false,
         "disableUiOverlay": false,
-        "mobCap": 10,
+        "mobCap": 2,
         "mobCapRange": 192
     },
     "biomeGroups": {
-        "deserts": ["minecraft:badlands", "minecraft:minecraft:wooded_badlands", "minecraft:eroded_badlands", "minecraft:savanna", "minecraft:savanna_plateau", "minecraft:windswept_savanna", "minecraft:desert"],
-        "jungles": ["minecraft:jungle", "minecraft:sparse_jungle", "minecraft:bamboo_jungle"],
-        "temperate": ["minecraft:plains","minecraft:sunflower_plains", "minecraft:forest", "minecraft:flower_forest", "minecraft:birch_forest", "minecraft:dark_forest", "minecraft:mushroom_fields"],
-        "shores": ["minecraft:beach","minecraft:snowy_beach", "minecraft:stony_shore"],
-        "swamps": ["minecraft:swamp", "minecraft:mangrove_swamp"],
-        "cold": ["minecraft:windswept_hills", "minecraft:windswept_gravelly_hills", "minecraft:windswept_forest", "minecraft:grove", "minecraft:meadow", "minecraft:snowy_slopes", "minecraft:frozen_peaks", "minecraft:jagged_peaks", "minecraft:stony_peaks", "minecraft:snowy_taiga"],
-        "snowy": [ "minecraft:snowy_slopes", "minecraft:frozen_peaks", "minecraft:snowy_plains", "minecraft:snowy_taiga", "minecraft:snowy_slopes", "minecraft:snowy_beach"],
-        "mountains": ["minecraft:windswept_hills", "minecraft:windswept_gravelly_hills", "minecraft:windswept_forest", "minecraft:grove", "minecraft:meadow", "minecraft:snowy_slopes", "minecraft:frozen_peaks", "minecraft:jagged_peaks", "minecraft:stony_peaks"],
-        "forests": ["minecraft:forest", "minecraft:flower_forest", "minecraft:birch_forest", "minecraft:dark_forest", "minecraft:mushroom_fields", "minecraft:taiga"],
-        "warmForests": ["minecraft:forest", "minecraft:flower_forest", "minecraft:birch_forest", "minecraft:dark_forest", "minecraft:mushroom_fields"],
-        "oldForests": ["minecraft:old_growth_spruce_taiga", "minecraft:old_growth_pine_taiga;", "Giant Tree Taiga Hills", "Giant Spruce Taiga Hills", "Giant Tree Taiga", "Giant Spruce Taiga"],
-        "snowyForests": ["minecraft:grove", "minecraft:snowy_taiga"]
+        "deserts": [
+            "minecraft:badlands",
+            "minecraft:minecraft:wooded_badlands",
+            "minecraft:eroded_badlands",
+            "minecraft:savanna",
+            "minecraft:savanna_plateau",
+            "minecraft:windswept_savanna",
+            "minecraft:desert",
+            "terrestria:canyon",
+            "terrestria:dunes",
+            "terrestria:oasis",
+            "terrestria:lush_desert",
+            "terrestria:outback",
+            "traverse:desert_shrubland",
+            "wilderwild:arid_forest",
+            "wilderwild:arid_savanna",
+            "wilderwild:oasis"
+        ],
+        "jungles": [
+            "minecraft:jungle",
+            "minecraft:sparse_jungle",
+            "minecraft:bamboo_jungle",
+            "terrestria:hemlock_rainforest",
+            "wilderwild:birch_jungle",
+            "wilderwild:rainforest"
+        ],
+        "temperate": [
+            "minecraft:plains",
+            "minecraft:sunflower_plains",
+            "minecraft:forest",
+            "minecraft:flower_forest",
+            "minecraft:birch_forest",
+            "minecraft:dark_forest",
+            "minecraft:mushroom_fields",
+            "terrestria:cypress_forest",
+            "traverse:flatlands",
+            "wilderwild:dark_birch_forest",
+            "wilderwild:flower_field",
+            "wilderwild:temperate_rainforest"
+        ],
+        "shores": [
+            "minecraft:beach",
+            "minecraft:snowy_beach",
+            "minecraft:stony_shore",
+            "wilderwild:warm_beach"
+        ],
+        "swamps": [
+            "minecraft:swamp",
+            "minecraft:mangrove_swamp",
+            "terrestria:cypress_swamp",
+            "traverse:lush_swamp",
+            "wilderwild:cypress_wetlands"
+        ],
+        "cold": [
+            "minecraft:windswept_hills",
+            "minecraft:windswept_gravelly_hills",
+            "minecraft:windswept_forest",
+            "minecraft:grove",
+            "minecraft:meadow",
+            "minecraft:snowy_slopes",
+            "minecraft:frozen_peaks",
+            "minecraft:jagged_peaks",
+            "minecraft:stony_peaks",
+            "minecraft:snowy_taiga",
+            "terrestria:windswept_redwood_forest",
+            "traverse:snowy_coniferous_forest"
+        ],
+        "snowy": [
+            "minecraft:snowy_slopes",
+            "minecraft:frozen_peaks",
+            "minecraft:snowy_plains",
+            "minecraft:snowy_taiga",
+            "minecraft:snowy_slopes",
+            "minecraft:snowy_beach",
+            "terrestria:snowy_hemlock_forest",
+            "terrestria:snowy_hemlock_treeline",
+            "wilderwild:snowy_old_growth_pine_taiga"
+        ],
+        "mountains": [
+            "minecraft:windswept_hills",
+            "minecraft:windswept_gravelly_hills",
+            "minecraft:windswept_forest",
+            "terrestria:windswept_redwood_forest",
+            "minecraft:grove",
+            "minecraft:meadow",
+            "minecraft:snowy_slopes",
+            "minecraft:frozen_peaks",
+            "minecraft:jagged_peaks",
+            "minecraft:stony_peaks",
+            "terrestria:caldera",
+            "terrestria:volcanic_island"
+        ],
+        "forests": [
+            "minecraft:forest",
+            "minecraft:flower_forest",
+            "minecraft:birch_forest",
+            "minecraft:dark_forest",
+            "minecraft:mushroom_fields",
+            "minecraft:taiga",
+            "terrestria:cypress_forest",
+            "terrestria:dense_woodlands",
+            "terrestria:hemlock_rainforest",
+            "terrestria:japanese_maple_forest",
+            "terrestria:rainbow_rainforest",
+            "terrestria:snowy_hemlock_treeline",
+            "traverse:autumnal_woods",
+            "traverse:coniferous_forest",
+            "wilderwild:dark_birch_forest",
+            "wilderwild:flower_field",
+            "wilderwild:mixed_forest",
+            "wilderwild:rainforest",
+            "wilderwild:temperate_rainforest"
+        ],
+        "warmForests": [
+            "minecraft:forest",
+            "minecraft:flower_forest",
+            "minecraft:birch_forest",
+            "minecraft:dark_forest",
+            "minecraft:mushroom_fields",
+            "terrestria:japanese_maple_forest",
+            "terrestria:rainbow_rainforest",
+            "wilderwild:dark_birch_forest",
+            "wilderwild:rainforest",
+            "wilderwild:temperate_rainforest"
+        ],
+        "oldForests": [
+            "minecraft:old_growth_spruce_taiga",
+            "minecraft:old_growth_pine_taiga;",
+            "terrestria:dense_woodlands",
+            "Giant Tree Taiga Hills",
+            "Giant Spruce Taiga Hills",
+            "Giant Tree Taiga",
+            "Giant Spruce Taiga",
+            "terrestria:lush_redwood_forest",
+            "traverse:woodlands",
+            "wilderwild:birch_taiga",
+            "wilderwild:dark_taiga",
+            "wilderwild:old_growth_birch_taiga",
+            "wilderwild:old_growth_dark_forest",
+            "wilderwild:snowy_old_growth_pine_taiga"
+        ],
+        "snowyForests": [
+            "minecraft:grove",
+            "minecraft:snowy_taiga",
+            "terrestria:snowy_hemlock_forest",
+            "terrestria:snowy_hemlock_treeline",
+            "traverse:snowy_coniferous_forest",
+            "wilderwild:snowy_old_growth_pine_taiga"
+        ]
     },
     "itemGroups": {
-        "flowerItems": ["sugar", "dandelion", "poppy", "blue_orchid", "allium", "azure_bluet", "red_tulip", "orange_tulip", "white_tulip", "pink_tulip", "oxeye_daisy", "cornflower", "lily_of_the_valley", "lilac", "rose_bush", "peony", "flowering_azalea_leaves"],
-        "grassItems": ["hay", "grass", "fern", "tall_grass", "large_fern", "bamboo"],
-        "leafItems": ["oak_leaves", "spruce_leaves", "birch_leaves", "jungle_leaves", "acacia_leaves", "dark_oak_leaves", "azalea_leaves", "flowering_azalea_leaves", "lily_pad", "small_dripleaf", "big_dripleaf"],
-        "mushroomItems": ["brown_mushroom", "red_mushroom", "crimson_fungus", "warped_fungus"],
-        "rootItems": ["cave_vines", "vines", "hanging_roots", "glow_lichen", "crimson_roots", "warped_roots", "nether_wart", "cactus"],
-        "seedItems": ["wheat_seeds", "melon_seeds", "pumpkin_seeds", "beetroot_seeds", "sweet_berries"],
-        "vegetableItems": ["potato", "carrot", "beetroot"],
-        "fruitItems": ["sweet_berries", "melon_slice", "apple", "glow_berries"],
-        "seaweedItems": ["seagrass", "kelp", "tall_seagrass"],
-        "fishItems": ["salmon", "cod", "tropical_fish", "pufferfish"],
-        "meatItems": ["rabbit", "chicken", "mutton", "beef", "porkchop", "egg"],
-        "scavengerItems": ["egg", "rotten_flesh", "spider_eye"]
+        "flowerItems": [
+            "sugar",
+            "dandelion",
+            "poppy",
+            "blue_orchid",
+            "allium",
+            "azure_bluet",
+            "red_tulip",
+            "orange_tulip",
+            "white_tulip",
+            "pink_tulip",
+            "oxeye_daisy",
+            "cornflower",
+            "lily_of_the_valley",
+            "lilac",
+            "rose_bush",
+            "peony",
+            "flowering_azalea_leaves"
+        ],
+        "grassItems": [
+            "hay",
+            "grass",
+            "fern",
+            "tall_grass",
+            "large_fern",
+            "bamboo"
+        ],
+        "leafItems": [
+            "oak_leaves",
+            "spruce_leaves",
+            "birch_leaves",
+            "jungle_leaves",
+            "acacia_leaves",
+            "dark_oak_leaves",
+            "azalea_leaves",
+            "flowering_azalea_leaves",
+            "lily_pad",
+            "small_dripleaf",
+            "big_dripleaf",
+            "terrestria:cypress_leaves",
+            "terrestria:hemlock_leaves",
+            "terrestria:dark_japanese_maple_leaves",
+            "terrestria:japanese_maple_leaves",
+            "terrestria:jungle_palm_leaves",
+            "terrestria:rainbow_eucalyptus_leaves",
+            "terrestria:rubber_leaves",
+            "terrestria:redwood_leaves",
+            "terrestria:sakura_leaves",
+            "minecraft:cherry_leaves",
+            "terrestria:willow_leaves",
+            "terrestria:yucca_palm_leaves",
+            "traverse:brown_autumnal_leaves",
+            "traverse:fir_leaves",
+            "traverse:orange_autumnal_leaves",
+            "traverse:red_autumnal_leaves",
+            "traverse:yellow_autumnal_leaves",
+            "wilderwild:baobab_leaves",
+            "wilderwild:cypress_leaves",
+            "wilderwild:flowering_lily_pad",
+            "cobblemon:apricorn_leaves"
+        ],
+        "mushroomItems": [
+            "brown_mushroom",
+            "red_mushroom",
+            "crimson_fungus",
+            "warped_fungus",
+            "wilderwild:brown_shelf_fungus",
+            "wilderwild:red_shelf_fungus"
+        ],
+        "rootItems": [
+            "cave_vines",
+            "vines",
+            "hanging_roots",
+            "glow_lichen",
+            "crimson_roots",
+            "warped_roots",
+            "nether_wart",
+            "cactus"
+        ],
+        "seedItems": [
+            "wheat_seeds",
+            "melon_seeds",
+            "pumpkin_seeds",
+            "beetroot_seeds",
+            "sweet_berries"
+        ],
+        "vegetableItems": [
+            "potato",
+            "carrot",
+            "beetroot"
+        ],
+        "fruitItems": [
+            "sweet_berries",
+            "melon_slice",
+            "apple",
+            "glow_berries"
+        ],
+        "seaweedItems": [
+            "seagrass",
+            "kelp",
+            "tall_seagrass"
+        ],
+        "fishItems": [
+            "salmon",
+            "cod",
+            "tropical_fish",
+            "pufferfish"
+        ],
+        "meatItems": [
+            "rabbit",
+            "chicken",
+            "mutton",
+            "beef",
+            "porkchop",
+            "egg"
+        ],
+        "scavengerItems": [
+            "egg",
+            "rotten_flesh",
+            "spider_eye"
+        ]
     },
     "itemGroupCategories": {
-        "nectar": ["flowerItems", "fruitItems"],
-        "leafyHerbivore": ["grassItems", "leafItems", "flowerItems"],
-        "heartyHerbivore": ["vegetableItems", "fruitItems", "mushroomItems"],
-        "herbivore": ["grassItems", "leafItems", "flowerItems", "vegetableItems", "fruitItems", "mushroomItems"],
-        "omnivore": ["vegetableItems", "fruitItems", "mushroomItems", "meatItems", "scavengerItems"],
-        "carnivore": ["meatItems", "fishItems"],
-        "scavenger": ["scavengerItems", "vegetableItems", "fruitItems", "mushroomItems"],
-        "piscivore": ["seaweedItems", "fishItems"],
-        "oceanScavenger": ["seaweedItems", "scavengerItems", "fishItems", "vegetableItems"]
+        "nectar": [
+            "flowerItems",
+            "fruitItems"
+        ],
+        "leafyHerbivore": [
+            "grassItems",
+            "leafItems",
+            "flowerItems"
+        ],
+        "heartyHerbivore": [
+            "vegetableItems",
+            "fruitItems",
+            "mushroomItems"
+        ],
+        "herbivore": [
+            "grassItems",
+            "leafItems",
+            "flowerItems",
+            "vegetableItems",
+            "fruitItems",
+            "mushroomItems"
+        ],
+        "omnivore": [
+            "vegetableItems",
+            "fruitItems",
+            "mushroomItems",
+            "meatItems",
+            "scavengerItems"
+        ],
+        "carnivore": [
+            "meatItems",
+            "fishItems"
+        ],
+        "scavenger": [
+            "scavengerItems",
+            "vegetableItems",
+            "fruitItems",
+            "mushroomItems"
+        ],
+        "piscivore": [
+            "seaweedItems",
+            "fishItems"
+        ],
+        "oceanScavenger": [
+            "seaweedItems",
+            "scavengerItems",
+            "fishItems",
+            "vegetableItems"
+        ]
     },
     "spawnCategories": {
         "CourierBirdSpawnSettings": {
@@ -202,7 +488,7 @@
             "maxSpawnGroupSize": 1,
             "maxIn256Region": 2
         },
-       "FirebirdSpawnSettings": {
+        "FirebirdSpawnSettings": {
             "shouldSpawn": true,
             "spawnDebug": false,
             "spawnWeight": 1,
@@ -223,14 +509,31 @@
             "speed": 0.44999998807907104,
             "attack": 10,
             "inventorySize": 4,
-            "spawnCategory" : "AcenciaSpawnSettings",
-            "spawnBiomes": ["snowyForests"],
+            "spawnCategory": "AcenciaSpawnSettings",
+            "spawnBiomes": [
+                "snowyForests"
+            ],
             "diet": "carnivore",
             "tamingChance": 10,
-            "tamingItems": ["mutton","salmon"],
-            "breedingItems": ["rabbit", "chicken", "mutton", "salmon"],
-            "foodItems": ["meatItems"],
-            "hostileToMobs": ["minecraft:rabbit","minecraft:sheep","minecraft:goat","minecraft:chicken"],
+            "tamingItems": [
+                "mutton",
+                "salmon"
+            ],
+            "breedingItems": [
+                "rabbit",
+                "chicken",
+                "mutton",
+                "salmon"
+            ],
+            "foodItems": [
+                "meatItems"
+            ],
+            "hostileToMobs": [
+                "minecraft:rabbit",
+                "minecraft:sheep",
+                "minecraft:goat",
+                "minecraft:chicken"
+            ],
             "playerHostile": false,
             "fleeFromPlayer": false,
             "battleWithOwner": true,
@@ -241,14 +544,26 @@
             "speed": 0.14999998807907104,
             "attack": 6,
             "inventorySize": 10,
-            "spawnCategory" : "ArchelonSpawnSettings",
-            "spawnBiomes": ["minecraft:deep_lukewarm_ocean"],
+            "spawnCategory": "ArchelonSpawnSettings",
+            "spawnBiomes": [
+                "minecraft:deep_lukewarm_ocean"
+            ],
             "diet": "omnivore",
             "tamingChance": 10,
-            "tamingItems": ["cod","salmon"],
-            "breedingItems": ["cod","salmon"],
-            "foodItems": ["piscivore"],
-            "hostileToMobs": ["minecraft:salmon"],
+            "tamingItems": [
+                "cod",
+                "salmon"
+            ],
+            "breedingItems": [
+                "cod",
+                "salmon"
+            ],
+            "foodItems": [
+                "piscivore"
+            ],
+            "hostileToMobs": [
+                "minecraft:salmon"
+            ],
             "playerHostile": false,
             "fleeFromPlayer": false,
             "battleWithOwner": false,
@@ -259,13 +574,22 @@
             "speed": 0.44999998807907104,
             "attack": 4,
             "inventorySize": 3,
-            "spawnCategory" : "CourierBirdSpawnSettings",
-            "spawnBiomes": ["jungles"],
+            "spawnCategory": "CourierBirdSpawnSettings",
+            "spawnBiomes": [
+                "jungles"
+            ],
             "diet": "herbivore",
             "tamingChance": 10,
-            "tamingItems": ["sweet_berries"],
-            "foodItems": ["fruitItems"],
-            "breedingItems": ["sweet_berries", "melon_slice"],
+            "tamingItems": [
+                "sweet_berries"
+            ],
+            "foodItems": [
+                "fruitItems"
+            ],
+            "breedingItems": [
+                "sweet_berries",
+                "melon_slice"
+            ],
             "hostileToMobs": [],
             "playerHostile": false,
             "fleeFromPlayer": true,
@@ -277,14 +601,29 @@
             "speed": 0.44999998807907104,
             "attack": 7,
             "inventorySize": 4,
-            "spawnCategory" : "DireWolfSpawnSettings",
-            "spawnBiomes": ["oldForests"],
+            "spawnCategory": "DireWolfSpawnSettings",
+            "spawnBiomes": [
+                "oldForests"
+            ],
             "diet": "carnivore",
             "tamingChance": 10,
-            "tamingItems": ["bone"],
-            "breedingItems": ["rabbit","chicken","mutton","beef","porkchop"],
-            "foodItems": ["meatItems"],
-            "hostileToMobs": ["minecraft:sheep","minecraft:skeleton"],
+            "tamingItems": [
+                "bone"
+            ],
+            "breedingItems": [
+                "rabbit",
+                "chicken",
+                "mutton",
+                "beef",
+                "porkchop"
+            ],
+            "foodItems": [
+                "meatItems"
+            ],
+            "hostileToMobs": [
+                "minecraft:sheep",
+                "minecraft:skeleton"
+            ],
             "playerHostile": false,
             "fleeFromPlayer": false,
             "battleWithOwner": true,
@@ -295,13 +634,25 @@
             "speed": 0.44999998807907104,
             "attack": 10,
             "inventorySize": 9,
-            "spawnCategory" : "DragonSpawnSettings",
-            "spawnBiomes": ["All Overworld"],
+            "spawnCategory": "DragonSpawnSettings",
+            "spawnBiomes": [
+                "All Overworld"
+            ],
             "diet": "carnivore",
             "tamingChance": 5,
-            "tamingItems": ["gold_ingot","diamond","emerald"],
-            "foodItems": ["meatItems"],
-            "breedingItems": ["golden_carrot","golden_apple","glistering_melon_slice"],
+            "tamingItems": [
+                "gold_ingot",
+                "diamond",
+                "emerald"
+            ],
+            "foodItems": [
+                "meatItems"
+            ],
+            "breedingItems": [
+                "golden_carrot",
+                "golden_apple",
+                "glistering_melon_slice"
+            ],
             "hostileToMobs": [],
             "playerHostile": true,
             "fleeFromPlayer": false,
@@ -314,14 +665,31 @@
             "speed": 0.44999998807907104,
             "attack": 7,
             "inventorySize": 4,
-            "spawnCategory" : "GriffonSpawnSettings",
-            "spawnBiomes": ["minecraft:windswept_gravelly_hills","minecraft:windswept_forest","minecraft:snowy_slopes","minecraft:jagged_peaks","minecraft:windswept_hills;"],
+            "spawnCategory": "GriffonSpawnSettings",
+            "spawnBiomes": [
+                "minecraft:windswept_gravelly_hills",
+                "minecraft:windswept_forest",
+                "minecraft:snowy_slopes",
+                "minecraft:jagged_peaks",
+                "minecraft:windswept_hills;"
+            ],
             "diet": "carnivore",
             "tamingChance": 10,
-            "tamingItems": ["rabbit","mutton"],
-            "breedingItems": ["rabbit","mutton"],
-            "foodItems": ["meatItems"],
-            "hostileToMobs": ["minecraft:sheep","minecraft:rabbit"],
+            "tamingItems": [
+                "rabbit",
+                "mutton"
+            ],
+            "breedingItems": [
+                "rabbit",
+                "mutton"
+            ],
+            "foodItems": [
+                "meatItems"
+            ],
+            "hostileToMobs": [
+                "minecraft:sheep",
+                "minecraft:rabbit"
+            ],
             "playerHostile": false,
             "fleeFromPlayer": false,
             "battleWithOwner": true,
@@ -332,13 +700,25 @@
             "speed": 0.44999998807907104,
             "attack": 4,
             "inventorySize": 9,
-            "spawnCategory" : "GeckotoaSpawnSettings",
-            "spawnBiomes": ["All Overworld"],
+            "spawnCategory": "GeckotoaSpawnSettings",
+            "spawnBiomes": [
+                "All Overworld"
+            ],
             "diet": "omnivore",
             "tamingChance": 10,
-            "tamingItems": ["melon","pumpkin","hay_block"],
-            "foodItems": ["heartyHerbivore"],
-            "breedingItems": ["melon","pumpkin","hay_block"],
+            "tamingItems": [
+                "melon",
+                "pumpkin",
+                "hay_block"
+            ],
+            "foodItems": [
+                "heartyHerbivore"
+            ],
+            "breedingItems": [
+                "melon",
+                "pumpkin",
+                "hay_block"
+            ],
             "hostileToMobs": [],
             "playerHostile": false,
             "fleeFromPlayer": false,
@@ -351,14 +731,29 @@
             "speed": 0.44999998807907104,
             "attack": 2,
             "inventorySize": 2,
-            "spawnCategory" : "MothSpawnSettings",
-            "spawnBiomes": ["Dark Forest Hills","Dark Forest"],
+            "spawnCategory": "MothSpawnSettings",
+            "spawnBiomes": [
+                "Dark Forest Hills",
+                "Dark Forest"
+            ],
             "diet": "herbivore",
             "tamingChance": 10,
-            "seekingBlocks": ["minecraft:torch", "minecraft:redstone_torch", "minecraft:soul_torch"],
-            "tamingItems": ["flowerItems"],
-            "breedingItems": ["sugar","melon_slice","glistering_melon_slice"],
-            "foodItems": ["nectar"],
+            "seekingBlocks": [
+                "minecraft:torch",
+                "minecraft:redstone_torch",
+                "minecraft:soul_torch"
+            ],
+            "tamingItems": [
+                "flowerItems"
+            ],
+            "breedingItems": [
+                "sugar",
+                "melon_slice",
+                "glistering_melon_slice"
+            ],
+            "foodItems": [
+                "nectar"
+            ],
             "hostileToMobs": [],
             "playerHostile": false,
             "fleeFromPlayer": false,
@@ -370,13 +765,23 @@
             "speed": 0.44999998807907104,
             "attack": 2,
             "inventorySize": 5,
-            "spawnCategory" : "ColelytraSpawnSettings",
-            "spawnBiomes": ["minecraft:mushroom_fields"],
+            "spawnCategory": "ColelytraSpawnSettings",
+            "spawnBiomes": [
+                "minecraft:mushroom_fields"
+            ],
             "diet": "herbivore",
             "tamingChance": 10,
-            "tamingItems": ["flowerItems","mushroomItems"],
-            "breedingItems": ["mushroomItems"],
-            "foodItems": ["flowerItems","mushroomItems"],
+            "tamingItems": [
+                "flowerItems",
+                "mushroomItems"
+            ],
+            "breedingItems": [
+                "mushroomItems"
+            ],
+            "foodItems": [
+                "flowerItems",
+                "mushroomItems"
+            ],
             "hostileToMobs": [],
             "playerHostile": false,
             "fleeFromPlayer": false,
@@ -388,13 +793,24 @@
             "speed": 0.44999998807907104,
             "attack": 4,
             "inventorySize": 3,
-            "spawnCategory" : "NetherBatSpawnSettings",
-            "spawnBiomes": ["Crimson Forest","Warped Forest"],
+            "spawnCategory": "NetherBatSpawnSettings",
+            "spawnBiomes": [
+                "Crimson Forest",
+                "Warped Forest"
+            ],
             "diet": "omnivore",
             "tamingChance": 10,
-            "tamingItems": ["porkchop"],
-            "breedingItems": ["porkchop","apple","rotten_flesh"],
-            "foodItems": ["scavenger"],
+            "tamingItems": [
+                "porkchop"
+            ],
+            "breedingItems": [
+                "porkchop",
+                "apple",
+                "rotten_flesh"
+            ],
+            "foodItems": [
+                "scavenger"
+            ],
             "hostileToMobs": [],
             "playerHostile": true,
             "fleeFromPlayer": false,
@@ -406,14 +822,28 @@
             "speed": 0.44999998807907104,
             "attack": 3,
             "inventorySize": 3,
-            "spawnCategory" : "NudibranchSpawnSettings",
-            "spawnBiomes": ["Warm Ocean"],
-            "spawnBlocks": ["minecraft:brain_coral_block","minecraft:bubble_coral_block","minecraft:fire_coral_block","minecraft:horn_coral_block","minecraft:tube_coral_block"],
+            "spawnCategory": "NudibranchSpawnSettings",
+            "spawnBiomes": [
+                "Warm Ocean"
+            ],
+            "spawnBlocks": [
+                "minecraft:brain_coral_block",
+                "minecraft:bubble_coral_block",
+                "minecraft:fire_coral_block",
+                "minecraft:horn_coral_block",
+                "minecraft:tube_coral_block"
+            ],
             "diet": "herbivore",
             "tamingChance": 10,
-            "tamingItems": ["seagrass"],
-            "foodItems": ["seaweedItems"],
-            "breedingItems": ["kelp"],
+            "tamingItems": [
+                "seagrass"
+            ],
+            "foodItems": [
+                "seaweedItems"
+            ],
+            "breedingItems": [
+                "kelp"
+            ],
             "hostileToMobs": [],
             "playerHostile": false,
             "fleeFromPlayer": false,
@@ -426,14 +856,29 @@
             "speed": 0.44999998807907104,
             "attack": 3,
             "inventorySize": 2,
-            "spawnCategory" : "RidingLizardSpawnSettings",
-            "spawnBiomes": ["Desert"],
+            "spawnCategory": "RidingLizardSpawnSettings",
+            "spawnBiomes": [
+                "Desert"
+            ],
             "diet": "carnivore",
             "tamingChance": 10,
-            "tamingItems": ["rabbit", "chicken"],
-            "breedingItems": ["rabbit", "chicken", "pumpkin", "rotten_flesh"],
-            "foodItems": ["scavenger"],
-            "hostileToMobs": ["minecraft:rabbit","minecraft:chicken"],
+            "tamingItems": [
+                "rabbit",
+                "chicken"
+            ],
+            "breedingItems": [
+                "rabbit",
+                "chicken",
+                "pumpkin",
+                "rotten_flesh"
+            ],
+            "foodItems": [
+                "scavenger"
+            ],
+            "hostileToMobs": [
+                "minecraft:rabbit",
+                "minecraft:chicken"
+            ],
             "playerHostile": true,
             "fleeFromPlayer": false,
             "battleWithOwner": true,
@@ -444,13 +889,21 @@
             "speed": 0.44999998807907104,
             "attack": 3,
             "inventorySize": 3,
-            "spawnCategory" : "FirebirdSpawnSettings",
-            "spawnBiomes": ["all overworld"],
+            "spawnCategory": "FirebirdSpawnSettings",
+            "spawnBiomes": [
+                "all overworld"
+            ],
             "diet": "herbivore",
             "tamingChance": 10,
-            "tamingItems": ["golden_apple"],
-            "breedingItems": ["golden_apple"],
-            "foodItems": ["golden_apple"],
+            "tamingItems": [
+                "golden_apple"
+            ],
+            "breedingItems": [
+                "golden_apple"
+            ],
+            "foodItems": [
+                "golden_apple"
+            ],
             "hostileToMobs": [],
             "playerHostile": false,
             "fleeFromPlayer": false,
@@ -462,14 +915,35 @@
             "speed": 0.44999998807907104,
             "attack": 5,
             "inventorySize": 4,
-            "spawnCategory" : "NightmareSpawnSettings",
-            "spawnBiomes": ["minecraft:basalt_deltas", "minecraft:soul_sand_valley"],
+            "spawnCategory": "NightmareSpawnSettings",
+            "spawnBiomes": [
+                "minecraft:basalt_deltas",
+                "minecraft:soul_sand_valley"
+            ],
             "diet": "omnivore",
             "tamingChance": 3,
-            "tamingItems": ["bone", "coal", "charcoal"],
-            "breedingItems": ["blaze_rod","fire_charge"],
-            "hostileToMobs":  ["minecraft:skeleton","minecraft:wither_skeleton"],
-            "foodItems": ["mushroomItems","rootItems","bone", "coal", "charcoal","blaze_rod","fire_charge"],
+            "tamingItems": [
+                "bone",
+                "coal",
+                "charcoal"
+            ],
+            "breedingItems": [
+                "blaze_rod",
+                "fire_charge"
+            ],
+            "hostileToMobs": [
+                "minecraft:skeleton",
+                "minecraft:wither_skeleton"
+            ],
+            "foodItems": [
+                "mushroomItems",
+                "rootItems",
+                "bone",
+                "coal",
+                "charcoal",
+                "blaze_rod",
+                "fire_charge"
+            ],
             "playerHostile": true,
             "fleeFromPlayer": false,
             "battleWithOwner": true,

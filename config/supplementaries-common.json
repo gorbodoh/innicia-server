@@ -4,6 +4,7 @@
     "speaker_block": {
       "enabled": true,
       "narrator_enabled": true,
+      "max_text": 32,
       "range": 64
     },
     "bellows": {
@@ -57,7 +58,8 @@
       "enabled": true,
       "block_side_attachment": true,
       "slide_on_fall": true,
-      "rope_override": "supplementaries:rope"
+      "rope_override": "supplementaries:rope",
+      "horizontal_ropes": true
     },
     "jar": {
       "enabled": true,
@@ -147,7 +149,8 @@
     },
     "planter": {
       "enabled": true,
-      "broken_by_sapling": true
+      "broken_by_sapling": true,
+      "rich_soil_planter": true
     },
     "notice_board": {
       "enabled": true,
@@ -224,6 +227,10 @@
       "only_works_in_curio": false,
       "quiver_pickup": true
     },
+    "slice_map": {
+      "enabled": true,
+      "range_multiplier": 0.25
+    },
     "bubble_blower": {
       "enabled": true,
       "stasis_cost": 5,
@@ -262,14 +269,20 @@
       "range_multiplier": 1.0,
       "charge_time": 20,
       "stasis_deceleration": 0.9625,
-      "unrestricted_enderman_intercept": true
+      "unrestricted_enderman_intercept": true,
+      "allow_splash_potions": false,
+      "allow_bombs": false,
+      "allow_fire_charges": false,
+      "allow_snowballs": false,
+      "allow_enderpearls": false
     },
     "antique_ink": {
       "enabled": true,
       "cartographer_trades": true
     },
     "candy": true,
-    "stasis": true
+    "stasis": true,
+    "altimeter": true
   },
   "general": {
     "creative_tab": false,
@@ -280,6 +293,9 @@
   },
   "tweaks": {
     "shulker_helmet": {
+      "enabled": true
+    },
+    "golden_apple_disenchant": {
       "enabled": true
     },
     "dye_blocks": {
@@ -341,12 +357,15 @@
     },
     "map_tweaks": {
       "random_adventurer_maps": true,
-      "block_map_markers": true
+      "block_map_markers": true,
+      "death_marker": "WITH_COMPASS",
+      "tinted_blocks_on_maps": true
     },
     "ceiling_banners": {
       "enabled": true
     },
     "placeable_books": {
+      "written_books": true,
       "enabled": true,
       "book_power": 1.0,
       "enchanted_book_power": 1.334,

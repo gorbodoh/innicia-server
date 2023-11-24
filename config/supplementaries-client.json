@@ -84,8 +84,8 @@
   },
   "particles": {
     "turn_particle": {
-      "initial_color": "2a77ea",
-      "fade_color": "32befa"
+      "initial_color": "#002A77EA",
+      "fade_color": "#0032BEFA"
     }
   },
   "general": {
@@ -120,14 +120,24 @@
     "tooltip_image_size": 80,
     "mob_head_shaders": true,
     "send_chat_on_death": true,
-    "sign_text_color_multiplier": 1.2000000476837158
+    "sign_text_color_multiplier": 1.2000000476837158,
+    "tinted_blocks_on_maps": true,
+    "tall_grass_color": true
   },
   "items": {
     "slingshot": {
       "overlay": true,
       "stasis_block_outline": true,
-      "block_outline_color": "ffffff66",
+      "block_outline_color": "#FFFFFF66",
       "projectile_scale": 0.5
+    },
+    "altimeter": {
+      "click_action": true,
+      "extra_dimension_textures": [
+        "minecraft:the_nether",
+        "minecraft:the_end"
+      ],
+      "texture_precision_multiplier": 1
     },
     "quiver": {
       "armor_render_offset": -1.0,

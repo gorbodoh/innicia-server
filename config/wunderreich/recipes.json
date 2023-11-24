@@ -485,5 +485,15 @@
   "imprinter/enchantment.mcdw.ricochet": true,
   "imprinter/enchantment.mcdw.tempo_theft": true,
   "imprinter/enchantment.mcdw.void_shot": true,
-  "imprinter/enchantment.mcdw.wild_rage": true
+  "imprinter/enchantment.mcdw.wild_rage": true,
+  "imprinter/enchantment.deeperdarker.catalysis": true,
+  "imprinter/enchantment.deeperdarker.sculk_smite": true,
+  "imprinter/enchantment.hybrid-aquatic.live_catch": true,
+  "imprinter/enchantment.combatroll.longfooted": true,
+  "imprinter/enchantment.combatroll.acrobat": true,
+  "imprinter/enchantment.combatroll.multi_roll": true,
+  "imprinter/enchantment.frostiful.enervation": true,
+  "imprinter/enchantment.frostiful.ice_breaker": true,
+  "imprinter/enchantment.frostiful.frozen_touch_curse": true,
+  "imprinter/enchantment.betterend.end_veil": true
 }

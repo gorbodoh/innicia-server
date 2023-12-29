@@ -6,9 +6,9 @@
 	// Do aggro Pokemon attack their targets even if they're in the middle of a battles?
 	"do_pokemon_attack_in_battle": false,
 	// The minimum level a Pokemon needs to be to fight back when provoked.
-	"minimum_attack_level": 5,
+	"minimum_attack_level": 20,
 	// The minimum level a Pokemon needs to be to attack unprovoked.
-	"minimum_attack_unprovoked_level": 10,
+	"minimum_attack_unprovoked_level": 40,
 	// Are Dark types more aggressive at or below light level 7 and less aggressive at or above light level 12
 	"dark_light_level_aggro": true,
 	// Are Ghost types more aggressive at or below light level 7 and less aggressive at or above light level 12
@@ -433,9 +433,9 @@
 	// Can player Pokemon target other player's Pokemon? (EXPERIMENTAL)
 	"do_player_pokemon_attack_other_player_pokemon": false,
 	// The amount of damage a pokemon would do on contact if it had 0 ATK and Sp.ATK.
-	"minimum_attack_damage": 1.0,
+	"minimum_attack_damage": 0.5,
 	// The amount of damage a pokemon would do on contact if it had 255 ATK or Sp.ATK.
-	"maximum_attack_damage": 25.0,
+	"maximum_attack_damage": 4.0,
 	// When a player owned Pokemon hurts or is hurt by a wild pokemon, should a pokemon battle be started?
 	"force_wild_battle_on_pokemon_hurt": false,
 	// When a player owned Pokemon hurts or is hurt by another player's pokemon, should a pokemon battle be started? (EXPERIMENTAL)

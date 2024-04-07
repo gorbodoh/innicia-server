@@ -38,4 +38,6 @@
 	"pollenParticles": true,
 	"logHollowing": true,
 	"cactusPlacement": true,
+	"frostedIceCracking": true,
+	"dripleafPowering": true,
 }

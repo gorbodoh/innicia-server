@@ -1,13 +1,13 @@
 name = "MC Dungeons Weapons"
-filename = "mcdw-8.1.0.jar"
+filename = "mcdw-9.0.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/FZmGDE43/versions/F4Nb4xBv/mcdw-8.1.0.jar"
+url = "https://cdn.modrinth.com/data/FZmGDE43/versions/AhyZP1zF/mcdw-9.0.1.jar"
 hash-format = "sha1"
-hash = "c4373442e755d38aaa3fdac5b169d94431751bce"
+hash = "39716a6f041c48341b8ffdcadca1bc6eb9924a4f"
 
 [update]
 [update.modrinth]
 mod-id = "FZmGDE43"
-version = "F4Nb4xBv"
+version = "AhyZP1zF"

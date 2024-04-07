@@ -69,7 +69,7 @@ generatedWaystonesUnbreakable = false
 globalWaystoneSetupRequiresCreativeMode = true
 
 # List of leashed mobs that cannot be taken with you when teleporting
-leashedDenyList = [ "minecraft:wither" ]
+leashedDenyList = [  ]
 
 # If enabled, only the owner of a waystone (the one who placed it) can rename it.
 restrictRenameToOwner = false
@@ -115,7 +115,7 @@ worldGenStyle = "BIOME"
 blocksPerXpLevel = 1000
 
 # The base xp level cost when travelling between dimensions. Ignores block distance.
-dimensionalWarpXpCost = 20
+dimensionalWarpXpCost = 3
 
 # The multiplier applied to the base xp cost when teleporting to a global waystone through any method.
 globalWaystoneXpCostMultiplier = 0.0
@@ -130,7 +130,7 @@ inverseXpCost = false
 maximumBaseXpCost = 30.0
 
 # The minimum base xp cost (may be subceeded by multipliers defined below)
-minimumBaseXpCost = 10.0
+minimumBaseXpCost = 5.0
 
 # The multiplier applied to the base xp cost when teleporting from a portstone.
 portstoneXpCostMultiplier = 1.0

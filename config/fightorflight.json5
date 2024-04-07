@@ -427,7 +427,7 @@
 	// Do player Pokemon defend their owners when they attack or are attacked by other mobs?
 	"do_pokemon_defend_owner": true,
 	// Do player Pokemon defend their owners proactively? (follows the same rules as Iron Golems)
-	"do_pokemon_defend_proactive": true,
+	"do_pokemon_defend_proactive": false,
 	// Can player Pokemon target other players? (EXPERIMENTAL)
 	"do_player_pokemon_attack_other_players": false,
 	// Can player Pokemon target other player's Pokemon? (EXPERIMENTAL)

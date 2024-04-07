@@ -1,13 +1,13 @@
 name = "MC Dungeons Artifacts"
-filename = "mcdar-3.0.0.jar"
+filename = "mcdar-4.0.1.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/xweQBqAC/versions/b3bs2cgJ/mcdar-4.0.1.jar"
 hash-format = "sha1"
-hash = "492552f21bd7d68fbff9b27586aa273576852416"
-mode = "metadata:curseforge"
+hash = "28ab2608ea58e15898e2a17969d022ab4bb32ad1"
 
 [update]
-[update.curseforge]
-file-id = 4628115
-project-id = 476788
+[update.modrinth]
+mod-id = "xweQBqAC"
+version = "b3bs2cgJ"

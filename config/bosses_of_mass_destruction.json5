@@ -1,9 +1,9 @@
 {
 	"lichConfig": {
 		"eternalNighttime": false,
-		"experienceDrop": 1500,
+		"experienceDrop": 4500,
 		"idleHealingPerTick": 0.20000000298023224,
-		"health": 1200.0,
+		"health": 3600.0,
 		"missile": {
 			"statusEffectId": "minecraft:slowness",
 			"statusEffectDuration": 100,
@@ -35,29 +35,32 @@
 		}
 	},
 	"obsidilithConfig": {
-		"health": 2000.0,
+		"health": 4000.0,
 		"armor": 14.0,
 		"attack": 14.0,
 		"idleHealingPerTick": 0.5,
-		"experienceDrop": 1000,
+		"experienceDrop": 5000,
 		"spawnPillarOnDeath": true,
 		"anvilAttackExplosionStrength": 4.0
 	},
 	"gauntletConfig": {
-		"health": 2000.0,
+		"health": 4000.0,
 		"armor": 8.0,
 		"attack": 14.0,
 		"idleHealingPerTick": 0.5,
-		"experienceDrop": 1000,
+		"experienceDrop": 5000,
 		"spawnAncientDebrisOnDeath": true,
 		"energizedPunchExplosionSize": 4.5,
 		"normalPunchExplosionMultiplier": 1.5
 	},
 	"voidBlossomConfig": {
-		"health": 1600.0,
+		"health": 3800.0,
 		"armor": 4.0,
 		"attack": 12.0,
 		"idleHealingPerTick": 0.5,
-		"experienceDrop": 1000
+		"experienceDrop": 4750
+	},
+	"generalConfig": {
+		"tableOfElevationRadius": 3
 	}
 }

@@ -156,7 +156,7 @@
   },
   "corruptedChampionConfigEntries": {
     "corrupted_champion": {
-      "healthInCastingPhase": 1500.0,
+      "healthInCastingPhase": 3500.0,
       "healthInHuntingPhase": 500.0,
       "damageCastingPhase": 25.0,
       "damageHuntingPhaseAddition": 40.0,

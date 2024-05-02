@@ -1036,7 +1036,7 @@
       "origins-plus-plus:shifter/arachnid/health": true,
       "origins-plus-plus:shifter/arachnid/master_of_webs": true,
       "origins-plus-plus:shifter/arachnid/size": true,
-      "origins-plus-plus:shifter/shift_avian": false,
+      "origins-plus-plus:shifter/shift_avian": true,
       "origins-plus-plus:shifter/avian/fresh_air": true,
       "origins-plus-plus:shifter/avian/health": true,
       "origins-plus-plus:shifter/avian/size": true,

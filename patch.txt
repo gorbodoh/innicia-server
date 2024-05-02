@@ -1,0 +1,1450 @@
+# Patch v2.1.0
+## Modpack Update ##
+- Included a patch note (patch.txt) in the modpack file so players will be able to see what is updated.
+## New Mods ##
+- Audaki Cart Engine (2.0.6)
+- FrozenLib (1.6.2)
+    - Dependency mod for Wilder Wild.
+- Linkart (5.4.3)
+- YetAnotherConfigLib (3.2.1)
+    - Dependency mod for Deeper and Darker v1.2.4 onwards.
+- Yung's API (4.0.3)
+    - Dependency mod for Better Archeology v1.1.2 onwards.
+## Mods Update ##
+- Adorn (5.0.0 → 5.0.1)
+    -- Patch Notes --
+        - Fixed an issue where candlelit lanterns were not dropping items. (#319)
+        - Fixed a crash with some mods that prevent reading block settings during mod init. (#321)
+        - Fixed an issue where seat entities disappears when a player logs out and logs back in. (#281)
+- AdventureZ (1.4.19 → 1.4.20)
+    -- Patch Notes --
+        - Updated VoidZ dependency.
+- Alloy Forgery (2.0.22 → 2.1.2)
+    -- Patch Notes --
+        2.1.0
+            -- Features --
+                - Adapted Blast Furnace recipes dynamically to Alloy Forge Recipes. (API Information planned for the future)
+                - Reduced the tier of the Deepslate Forge Controller. (Tier 2 → Tier 1)
+                    - This change was made to make raw ore doubling harder to get. It is now required for players to seek out Prismarine or Blackstone (from Nether) to make a better Forge Controller.
+            -- Fixes --
+                - Fixed tick related lag when idling or crafting.
+                - Logic and caching was added for recipe checking, which greatly improves performance.
+                - Fixed mishandling of Fuel Remainders, where stacks would be entirely replaced with the remainders.
+                - Various fixes for compatibility recipes, mainly related to common tags.
+        2.1.1
+            - Fixed issues with relation to mods calling craft method to get recipe output leading to unintended ingredient removal.
+        2.1.2
+            - Added an icon when the recipe used in the Forge is higher than the required minimum tier.
+- Archers (RPG series) (1.0.6 → 1.0.7)
+    -- Patch Notes --
+        - Added compatibility for c:wood_sticks in recipes.
+        - Updated Italian translation, thanks to Zano1999.
+        - Updated Chinese translation, thanks to Sillymoon.
+        - Fixed an issue where crossbow's Infinity can fire tipped arrows without consuming them. (#16)
+- Architectury API (9.1.12 → 9.1.13)
+    - Check https://www.github.com/architectury/architectury/commits/1.20 for commit history.
+- AzureLib Armor (2.0.0 → 2.0.3)
+    -- Patch Notes --
+        2.0.2
+            - Port ItemArmorGeoLayer tweak.
+            - Port DyeableGeoArmorRenderer.
+        2.0.3
+            - Fixed ItemArmorGeoLayer Crash.
+- Balm (7.1.4 → 7.2.1)
+    -- Patch Notes --
+        - Hotfix: Fixed Crafting Tweaks keybindings preventing others from working on Fabric if Amecs is not installed.
+        - Hotfix: Fixed Inventory Essentials keybindings preventing others from working on Fabric if Amecs is not installed.
+        - Hotfix: Fixed crash on world creation when used with Essentials.
+        - Added context-aware keybindings support for Fabric.
+        - Added support for Amecs key modifiers, mainly to allow configurable bindings in Inventory Essentials.
+        - Added limited support for multiple key modifiers within supported mods (mainly Inventory Essentials).
+- BCLib (3.0.13 → 3.0.14)
+    -- Patch Notes --
+        -- Features --
+            - Support for Fabric Launcher 15.x
+        -- Changes --
+            - Destroy Underwater Plants in tick
+            - Tag for grass soil blocks
+            - BCLib creates Datapack files for every Tag it defines
+            - SimpleLeavesBlock do not register for random ticks
+            - Have behaviour Builder for non-tickable leaves
+- Better Archeology (1.1.0 → 1.1.5)
+    -- Patch Notes --
+        1.1.2
+            - Starting this version, Better Archeology will have dependency on Yung's API v4.0.2.
+            - Fixed underground structures generated in water being waterlogged resolving issue. #43
+            - Deleted some logspam and unnecessary imports.
+        1.1.4
+            - Added collected biome tags to support worldgen mods like WW, BOP, Terralith and more.
+        1.1.5
+            - Added support for the ElytraSlot mod (Trinkets API) for Soaring Winds.
+            - Slightly boosted upwards momentum from Soaring Winds.
+- Better Combat (1.8.3 → 1.8.4)
+    -- Patch Notes --
+        - Fix ReplayMod Compat, thanks to Smartin-b. #317 #24
+        - Fix Pehkui Compatibility, thanks to Leximon. #326
+        - Improve First Person Model compatibility. #329
+- BetterEnd (4.0.10 → 4.0.11)
+    -- Patch Notes --
+        -- Features --
+            - Support for Fabric Launcher 15.x
+        -- Changes --
+            - Updated Simplified Chinese Translation. (by IwasConfused and aoligei635)
+            - Updated guidebook format to make it work on 1.20+. (ny noah1510)
+            - Removed old Sodium compatibility code.
+            - Moved common tags to BCLib.
+            - Disabled leaf ticks for some variants.
+        -- Fixes --
+            - Added Flight Duration to Rockets from Village Loot.
+            - Fixed a crash when placing an eternal Crystal with no portal blocks in range.
+- BetterNether (9.0.9 → 9.0.10)
+    -- Patch Notes --
+        - Some Nether Grass will grow on all `#c:grass_soil` blocks.
+        - Moved common tags to BCLib.
+        - Soul-, Bone- and sepia Bone-Grass can be placed on any solid block now.
+        - Leaves do not randomly tick.
+        - Added Turkish translation. (by alpeerkaraca)
+        - Updated Simplified Chinese Translation. (by IwasConfused)
+- BetterTrims (2.0.5 → 2.2.3)
+    -- Patch Notes --
+        2.1.0
+            -- Changes --
+                - All trim effects now only apply if the armour is in the correct slot.
+                - All trim effects can now be toggled in the config.
+                - Silver effect can now be toggled to enable/disable the effect in dimensions that have a fixed time.
+                    - Configurable. (default: true)
+                - Slime effect on the boots now completely negates fall damage and causes you to bounce.
+                    - Configurable. (default: true)
+                - Leather effect now does not allow you to step-down higher than vanilla.
+                - Dragon's Breath effect now doesn't re-apply the cloud effect to it's owner.
+                - Enderpearl will only be able to teleport you every 10 ticks to prevent constant teleporting on repeated damage.
+                - Couple changes to the default config for balance purposes.
+                - Added no_no.json.
+            -- Bug Fixes --
+                - Fixed Copper Swim Speed not applying correclty.
+                - Fixed Iron Mining Speed applying to all tools on all blocks.
+                - Fixed Slime knockback effect not applying correctly.
+                - Fixed Glowstone effect from constantly re-applying increasing the level of effects greatly.
+                - Fixed crash with Fire Charge effect.
+                - Fixed Fire Charge not applying to attacked mobs.
+                - Fixed trim effects from Trims Expanded not applying correctly.
+                - Fixed crash with Immersive Portals.
+        2.1.1
+            - Fixed crash with incorrect application of compat mixins when another mod is not present.
+        2.1.2
+            - Updated Readme to include the changes.
+            - Added exact figures to the Readme, in-game tooltips will still remain deliberately vague.
+            - Re-balanced Netherbrick Trim.
+        2.2.0
+            - Added Compat with Better Trim Tooltips. (Press Shift to see the effects)
+            - Fixed default Ender Pearl dodge chance.
+        2.2.1
+            - Inverted material checking to improve leniency with other mod's items when using All The Trims.
+            - Previously was "material contains item", now is "item contains material", so "block of iron" will now be considered iron.
+        2.2.2
+            - Fixed crash with Beacon Overhaul when faking night vision with silver trim.
+        2.2.3
+            - Fixed dragons breath trim applying to owner if the effect is provided by the armour
+            - Effect cloud now only applies a 1 second copy of the effect so the effect is only shared while in the cloud
+            - Increased default radius of the cloud to balance this out.
+- Bookshelf (20.1.6 → 20.1.9)
+- Bosses of Mass Destruction (1.7.2 → 1.7.5)
+    -- Patch Notes --
+        1.7.4
+            - Fixed crash with loader 1.15.0 beta.
+        1.7.5
+            - Fixed server crash with void lily.
+- Cinderscapes (4.0.9 → 4.0.10)
+    -- Patch Notes --
+        - Avoid placing TerraBlender's placeholder biome
+        - Place Fabric biome API End biomes
+        - Requires Fabric Loader 0.14.25+
+        - Add Bramble Berries to c:foods; resolves #158
+- Cloth Config API (11.1.106 → 11.1.118)
+- Cobblemon (1.4.0 → 1.4.1)
+    -- Patch Notes --
+        -- Additions --
+            - Added battle spectating. Press R on a player in a battle and you can spectate and bully them for their tactics.
+            - Added the Litwick and Drifloon lines.
+            - Cobblemon now has compatibility with Adorn, allowing you to craft Apricorn wood furniture.
+            - Berries can now be used in recipes from Farmer's Delight and Farmer's Delight (Fabric), as well as any other mods using the same berry tags.
+            - Boats, signs and hanging signs are now craftable with Apricorn wood.
+            - Added the Fairy Feather, Iron Ball, Cleanse Tag, Flame Orb, Life Orb, Smoke Ball, and Toxic Orb held items.
+            - Added the Inferno, Void, and Forsaken patterns for Vivillon. These can be obtained by evolving a Spewpa in the Nether, End, or Deep Dark respectively.
+            - Bees can now be fed using Pep-Up Flowers.
+            - Mooshtank can now be milked with a bowl for Mushroom Stew.
+            - Updated Showdown version to use generation 9 battle data.
+            - Added cries to Beldum, Metang and Metagross.
+            - Added a /bedrockparticle command to run Snowstorm-format particle effects.
+            - Added data for Dipplin, Fezandipiti, Munkidori, Ogerpon, Okidogi, Poltchageist and Sinistcha.
+        -- Changes --
+            - Using Potions, Status Heals, Ethers, and Antidotes will now return a glass bottle
+            - Using a Remedy, Fine Remedy, or Superb Remedy will no longer lower friendship with a Pokémon.
+            - The Healing Machine now has a much more difficult recipe, placing it later game.
+            - Made the EXP. Share recipe cheaper.
+            - Turtwig can now be put on your shoulder.
+            - Updated Zubat line model, texture, and animations.
+            - Updated Geodude line models and textures.
+            - Added animations for Hitmontop, Tyrogue, and Mightyena.
+            - Tweaked animations for Dusknoir, Ratatta, Bewear, Exeggutor, and Alolan Exeggutor.
+            - Sized Kantonian Exeggutor down. Still big, but not TOO big.
+            - Tweaked cries for Pikachu, Raichu and Alolan Raichu.
+            - Fixed Swimming behaviors for Wimpod line, Oshawott line, Quaxly line, and Clodsire
+            - Changed the way level scaling works in spawning. By default, anything with a spawn range of up to 5 either side of the party highest level and everything else will spawn per its specified ranges.
+            - The nature of Pokémon will now be displayed italicized when a mint has been applied. Hovering over the nature will display the mint that was applied.
+            - Slightly lowered the volume of all cries.
+            - Giving Pokémon items now plays a sound.
+            - Updated the Poké Ball model and animations.
+            - Pasture blocks will now also connect their bottom left and right sides to walls, iron bars, glass panes, and any other modded block that follows the same connection rules.
+            - The config option consumeHeldItems has been removed, please see the Datapack & Resourcepack Creators section for instructions on the updated method.
+            - Heal Powder can now be composted with a 75% chance of adding a layer.
+            - Mental, Power, White, and Mirror Herbs can now be composted with a 100% chance of adding a layer.
+            - Added glowing eyes to Hoothoot and Noctowl.
+            - Mining Evolution Stone Ores with a Fortune pickaxe will now increase the amount of items received.
+            - Black Augurite can now be used to craft stone axes and obsidian.
+            - Using Experience Candies brings up the Party Pokémon Select screen when not targeting a Pokémon.
+            - Added tab completion for statuses to commands.
+            - Remedies can now be cooked in a Smoker and on a Campfire.
+            - Vertically flipped the Destiny Knot recipe.
+        -- Fixes --
+            - Fixed Raticate, Onix, Unfezant, Bergmite, Avalugg, Boltund and Revavroom cries not playing.
+            - Fixed Alolan Ratticate animations causing a crash.
+            - Fixed Quaxwell not doing its cry.
+            - Fixed Shroomish not using its idle.
+            - Fixed how Weight and Height is calculated for Pokémon, fixing the damage from moves like Low Kick.
+            - Fixed a staggering number of battle messages.
+            - Fixed various stone related blocks not being valid for Big Roots to spread onto on the Fabric version.
+            - Updated the registration of compostable items to improve compatibility with Fabric forks such as Quilt. Please note this does not mean we officially support Quilt, this change was only done since it was possible by correcting the registration to use the new intended way in the Fabric API.
+            - Fixed Dispensers being unable to shear grown Apricorns.
+            - Fixed Bowl not being given back to player after using Berry Juice.
+            - Fixed missing text for attempting to catch an uncatchable Pokémon.
+            - Fixed Moonphases for Clefairy line.
+            - Fixed issue where Potions, Super Potions, and Hyper Potions did not work during battle.
+            - Fixed the compatibility patch with the Forge version of Carry On due to a bug on the mod, the Fabric version was unchanged and is still compatible.
+            - Added the ability to place Berries on modded Farmland blocks.
+            - Shouldered Pokémon now hop off when selected in team and R is pressed. This also is in effect in battles leading to shouldered Pokémon jumping of the shoulder of the trainer when it is their turn.
+            - Made more items compostable and changed the process for making items compostable.
+            - Added the ability for Hoppers to fill Brewing Stands with Medicinal Brews and Potions.
+            - Apricorn blocks are now flammable. Probably should have started that way, but we got there.
+            - The default pose for Pokémon being passengers is now "standing".
+            - Fixed issue where some IVs were changing every time a player logged back in.
+            - Fixed advancement crash from bad datapack evolution data.
+            - Fixed global influences being applied to TickingSpawners twice.
+            - Reverted the default SpawningSelector back to FlatContextWeightedSelector. This fixes multiple weight related issues, including weights with SpawningInfluences.
+            - Apricorn Planting advancement should work again.
+            - Advancement "Vivillonaire" should now allow High Plains and Icy Snow Vivillon to register.
+            - Fixed the last battle critical hits evolution requirement not working.
+            - Fixed the damage taken evolution requirement not saving progress.
+            - Fixed the defeated Pokémon evolution requirement not saving progress.
+            - Fixed potion brewing recipes not showing up JEI and similar mods on the Forge version.
+            - Fixed an exploit that could convert a single piece of Blaze Powder into an extra Medicinal Brew on the Forge version.
+            - Fixed an issue where health percentages would show incorrectly after healing.
+            - Fixed the move Revival Blessing not allowing you to select from fainted party members.
+            - Fixed villagers not being able to pick up and plant mint seeds, vivichoke seeds, and revival herbs.
+            - Fixed Exeggcute faint.
+            - Fixed various spawn configuration issues across the board.
+            - Fixed a possible visual duplication of sent out Pokémon.
+            - Fixed battle text for Trace, Receiver, and Power of Alchemy.
+            - Fixed tooltips being appended too late in items.
+            - Fixed battles ending background music when battle music is not present.
+            - Fixed battles ending background music, instead of pausing, when battle music is played.
+            - Fixed a bunch of regionals to actually be obtainable, namely the unmodelled ones.
+            - Fixed battle text for moves that were missing.
+            - Fixed a formatting error that affected Pokémon nicknames when the storage type is JSON.
+            - Fixed a crash that could occur on some servers relating to chunk loading and teleporting.
+            - Fixed an issue with Inkay's evolution requirement.
+            - Fixed conflicting evolution requirements that would cause the Ocean, River, Sun, and Tundra variants of Vivillon to be unobtainable through evolution.
+            - Fixed the Modern variant of Vivillon not being obtainable through evolution.
+            - Fixed Pokémon pathing through berry bushes, harming themselves in the process.
+- Collective (7.7 → 7.30)
+    -- Patch Notes --
+        7.8
+            - Added support with Chat Heads for dependent chat mods.
+        7.9
+            - Added support for the Spawn Radius gamerule in the function where Collective determines if a player spawned in a world for the first time.
+        7.11
+            - Added the BlockTagsHelper class. It aids in providing support for modded blocks within the multi mod loader environment.
+        7.12
+            - Added an extra check if the chunk is loaded to the function that finds surface block positions. Improves compatibility with other mods.
+        7.13
+            - Fixed an issue where Collective sets returned BlockPos positions too high.
+        7.14
+            - Fixed some issues related to the in-game config screen.
+        7.15
+            - Further improvements to Collective's in-game config screen.
+        7.16
+            - Added the mixin config class for pre-NeoForge versions as well, to improve compatibility.
+        7.19
+            - Added ScreenFunctions related to client-side sign editing.
+        7.21
+            - (1.20.4) Updated the modEventBus field in NeoForge to the new format.
+            - Updated mods.toml and fabric.mod.json data.
+            - Added 'type="required"' line, needed in the latest NeoForge version.
+        7.22
+            - Added access transformer and function related to entity flags.
+        7.23
+            - Updated Spawn A Mob code.
+            - It's been cleaned up, and added an option to only spawn mobs below the surface.
+        7.24
+            - Added an extra option to specify a maximum Y value in the Spawn A Mob code.
+        7.25
+            - Made the MixinConfigPlugin check less specific to allow mixin files in Common.
+        7.26
+            - Fixed Common mixins not loading correctly in NeoForge.
+        7.28
+            - Cleaned up Schematic code.
+            - Fixed an issue where .schem files were incorrectly parsed.
+        7.30
+            - Updated PlayerFunctions.
+            - Added support for a custom player spawn point.
+            - Added extra logging and an option to disable the spawn check in the 'isJoiningWorldForTheFirstTime' function.
+- Combat Roll (1.3.0 → 1.3.1)
+    -- Patch Notes --
+        - Improve roll hotkey handling #40.
+- Conduits Prevent Drowned (3.5 → 3.6)
+    -- Patch Notes --
+        - Improved mod icon compression, which lowers the jar file size.
+        - Updated mod URLs to the new GitHub location.
+        - (NeoForge) Updated to the new changes: Added 'type=' to mods.toml, and moved the modEventBus field.
+- Crafting Tweaks (18.2.1 → 18.2.2)
+    -- Patch Notes --
+        - Fixed remainder items being voided when compressing items.
+- Creeper Overhaul (3.0.1 → 3.0.2)
+    -- Patch Notes --
+        - Snowy creepers will no longer drop disks when fighting strays.
+        - Snowy creepers can now walk on powdered snow.
+        - Changed the spawning of certain creepers to allow for configurability.
+        - Added and updated several translation files.
+- Deeper and Darker (1.2.3 → 1.2.6)
+    -- Patch Notes --
+        1.2.4
+            - Added config options.
+            - Updated Stalker.
+            - Added damage types: deeperdarker.bite (sculk jaw) and deeperdarker.ring (Stalker's ranged attack). 
+            - Fixed crash related to warden armor.
+            - Added echo boat and chest boat to #minecraft:boats and #minecraft:chest_boats respectively.
+            - Added ancient vases to ancient cities.
+            - Added warden upgrade smithing template to ancient temple secret chest.
+        1.2.5
+            - Fixed sculk transmitter not checking if connected chunk is loaded.
+        1.2.6
+            - Added back soul elytra boost with better controls.
+            - Fixed warden helmet immunity not working.
+            - Fake ancient vases no longer drop loot.
+            - Sculk snappers can now sit.
+- End Remastered (5.2.3 → 5.2.4)
+    -- Patch Notes --
+        - Added Compatibility with Immersive Portals.
+        - Fixed Eyes not spawning in Repurposed Structures Structures.
+- Enderman Overhaul (1.0.1 → 1.0.4)
+    -- Patch Notes --
+        1.0.2
+            - Reduced Soulsand Valley Enderman follow range to 16.
+            - Renamed Ocean Enderman to Coral Enderman.
+            - Crimson, Warped, Soul, End, and Ocean Endermen no longer drop default ender pearls.
+            - Added some more biome spawns tags so hopefully enderman spawn in modded biomes more often.
+            - Added icy pearl sound.
+            - Fixed misplaced element on Swamp Enderman.
+            - Hostile Endermen no longer attack players with hoods.
+            - Cave Enderman will now teleport away from light sources.
+        1.0.3
+            - Reduced Soulsand Valley Enderman follow range to 16.
+            - Renamed Ocean Enderman to Coral Enderman.
+            - Crimson, Warped, Soul, End, and Ocean Endermen no longer drop default ender pearls.
+            - Added some more biome spawns tags so hopefully enderman spawn in modded biomes more often.
+            - Added icy pearl sound.
+            - Fixed misplaced element on Swamp Enderman.
+            - Hostile Endermen no longer attack players with hoods.
+            - Cave Enderman will now teleport away from light sources.
+        1.0.4
+            - Reduced cave enderman, flower fields enderman, and mushroom enderman spawns.
+            - Increased coral enderman spawns.
+            - Added End Enderman teleport chance config.
+- Fabric API (0.90.7 → 0.92.0)
+    -- Patch Notes --
+        0.91.0
+            - Bumped version. (modmuss50)
+            - Fixed registry resource conditions on loot tables. (#3432) (modmuss)
+            - Fixed empty storage iterator returning views that become empty during iteration. (#3423) (Technici4n)
+        0.91.1
+            - Bumped version. (modmuss50)
+            - Updated Loom/Gradle and Fabric Loader. (#3571) (modmuss)
+        0.92.0
+            - Bumped version. (modmuss50)
+            - Fixed empty data attachments being saved. (#3588) (modmuss)
+            - Fixed data attachment testmod. (#3586) (Jochen Jacobs)
+            - Extended Data Attachment API to ProtoChunk. (#3548) (Jochen Jacobs)
+            - Data Attachment API. (#3476) (Syst3ms)
+            - [1.20.1] Backported mob conversion event. (#3576) (Syst3ms, haykam821)
+- Fabric Language Kotlin (1.10.14 → 1.10.17)
+- Farmer's Delight (1.4.2 → 1.4.3)
+    -- Patch Notes --
+        - Fixed crops break on non watered farmland. #206 (thanks to BarchamMal)
+        - Added cutting recipes for cherry wood and log. #219 (thanks to BarchamMal)
+        - Added possibility to plant pitcher pods on rich soil. #189 (thanks to BarchamMal)
+        - Fixed crash when using the bogey selection menu from create: steam n rails. #205 (thanks to AwesomeDude091)
+- Fish of Thieves (3.0.2 → 3.0.4)
+    -- Patch Notes --
+        3.0.3
+            - 1.20: Added Fish Bone to Ocean Ruins Archaeology loot.
+            - Added Alex's Caves Radgill compatibility.
+            - New Brain AIs system for fishes.
+            - New AI: Combine a flock with another small flock.
+            - New AI: Avoid Magma Block and Bubble Column.
+            - New AI: Trophy Fish will act as a flock leader.
+            - New AI: Wreckers are now swim to seek low light.
+            - Added Trophy Spawn Egg (Can be configured).
+            - Plentifin can be used to brew Luck potion.
+            - Islehopper can be used to brew Water Breathing potion.
+            - Fish Plaque can be waxed and unwaxed.
+            - Fixed Devilfish uses Leeches as food instead of Grubs.
+            - Fixed hard crash for not using proper Mod event for Register Entity Layer.
+        3.0.4
+            - Fish Plaque is now getting all entity data when spawned by bucket.
+            - Reverted fish dancing to use same behavior like parrot does, closes #44.
+            - Forge: Register Creative Tab in RegisterEvent.
+- Friends&Foes (1.9.8 → 2.0.9)
+    -- Patch Notes --
+        1.9.9
+            - Reworked Copper Golem AI to use brain/tasks instead of goals.
+            - Reworked Copper Golem animations to use keyframe animations.
+            - Improved Copper Golem oxidized statue state (all works smoothly now).
+            - Improved compatibility with other mods tweaking lightning rod.
+            - Fixed golems pattern spawns with dispenser.
+            - Fixed golems and Wildfire immunity to fall damage.
+            - Added Catalogue compatibility.
+            - Updated da_dk, ja_jp and ru_ru translations (thanks to contributors).
+        2.0.0
+            - Fixed compatibility problems leading to client/server crashes related to Illusioner and Blaze interactions.
+            - Fixed Mauler collider box scaling issues.
+            - Boosted Mauler scaling allowing significant growth when fed with enchanted items.
+            - Changed Wildfire Crown Fragments to be immune to fire/lava.
+            - Infrastructure changes across all versions allowing faster development flow/ports.
+        2.0.1
+            - Fixed crash related to blaze.
+            - Fixed mauler being immortal.
+        2.0.2
+            - Fixed crash related to blaze/wildfire/illusioner (again).
+            - Reworked moobloom variants to use datapacks instead of internal api.
+            - Nerfed wildfire crown.
+        2.0.3
+            - Fixed moobloom variants not working properly with dedicated servers.
+        2.0.4
+            - Improved copper golems sections in ancient city center pieces.
+            - Lowered fabric loader version requirement to 0.14.21.
+            - Lowered forge loader version requirement to 47.1.43.
+        2.0.5
+            - Improved compatibility for certain mods with tweaks in datapack driven moobloom variant system.
+            - Lowered fabric loader version requirement to 0.14.21.
+        2.0.6
+            - Fixed crash on forge dedicated servers related to moobloom variants.
+            - Updated translations.
+        2.0.7
+            - Fixed moobloom spawns.
+            - Updated translations.
+        2.0.8
+            - Reworked Glare AI to use brain/tasks instead of goals.
+            - Reworked Glare model.
+            - Reworked Glare textures.
+            - Reworked Glare animations.
+        2.0.9
+            - Fixed Glare follow logic when tamed.
+- Frostiful (0.10.1 → 1.0.4)
+    -- Patch Notes --
+        1.0.0
+            - Added Snowflake Banner Pattern, crafted from Packed Snowballs.
+            - Added icicle patches to caves in snowy biomes.
+            - Fixed a crash when starting a server.
+            - Added a new texture for the Frost Wand item.
+            - Added a new texture for the Frost Wand spell.
+            - Added integrations for warm foods from Farmer's Delight, Farmer's Respite, Festive Delight, and Frozen Up. Warm foods and drinks now give 60 seconds of Warmth when consumed.
+            - Added an integration for Fabric Seasons that makes winters to be extra cold.
+        1.0.1
+            - Fixed Hot Cocoa from Farmer's Delight not granting Warmth.
+            - Added Warmth to Spectrum's Hot Chocolate.
+            - When Fabric Seasons is enabled, summer will now make freezing biomes slightly warmer, and removes the night time chill effect.
+            - Added more tags to control biome temperature. See the wiki for more information.
+        1.0.2
+            - Updated Russian translations (Tefnya, #58).
+            - Fixed a crash with Farmer's Delight on Dedicated Servers.
+        1.0.3
+            - Made the Frostologer and their minions friendly to the Illager Origin (from Mob Origins).
+            - Switched to a tag based system for frost resistant armors.
+            - Space Suits from Ad Astra now provide Frost Resistance.
+            - Deprecated Item Attribute Modifiers.
+            - This functionality will work but is no longer supported as it desyncs on multiplayer servers. I plan to add this functionality to Thermoo anyway, with proper synchronization.
+            - Single Layers of Packed Snow now decay into Snow randomly.
+            - Polar Bears can now be Brushed instead of Sheared, and no longer take damage from Brushing (but they still get angry).
+            - Ocelots and Wolves can now also be brushed.
+            - Wild Wolves will anger when brushed.
+        1.0.4
+            - Allows the frostiful:powder_snow_walkable tag to work on items equipped any armor slot (not just feet).
+            - Made Leather Horse Armour prevent horses from sinking in Powder Snow (fixes a compatibility issue with Superb Steeds).
+- Galosphere (1.3.1 → 1.4.1)
+    -- Patch Notes --
+        1.4.0
+            Worldgen
+                - Added Pink Salt Caves.
+                - Added Pink Salt Shrine.
+            Blocks
+                - Added 3 Pink Salt Types (Pink Salt, Rose Pink Salt, Pastel Pink Salt).
+                - Added polished, bricks, chiseled variants for all salt types.
+                - Added Pink Salt Lamp.
+                - Added Pink Salt Chamber (Summons 3-5 preserves that have a 75% of dropping pink salt clusters).
+                - Added Pink Salt Straw (If placed on top of a filled composter downwards, it will randomly turn the compost into coarse dirt. If placed on top of a copper block, it has a higher chance of aging it).
+                - Added Pink Salt Cluster.
+                - Added Silver Balance (Emits a redstone signal based on the block above it, e.g. obsidian -> 15 redstone output, diamond -> 10 redstone output, planks -> 4 redstone output).
+                - Added Shadow Frame (Right-click it with any block to copy the block item. Any entities can pass through it but mobs cannot pathfind it when the block is filled).
+                - Added Coarse Dirt Composter.
+                - Added Cured Membrane Block.
+                - Added Stranded Membrane Block (Fluid-like block that carries entities based on its directional state).
+                - Added Gilded Beads.
+            Items
+                - Added Pink Salt Shard (Can be crafted with gunpowder).
+                - Added Cured Membrane.
+                - Added Salted Jerky.
+                - Added Preserved Flesh (Can be eaten but it has a durability of 180).
+                - Added Preserved Template (Applied to any item to prevent it from dropping out of your inventory).
+                - Added Saltbound Tablet (Summons pink salt pillars which deal damage to mobs).
+            Mobs
+                - Added Preserved.
+                - Added Berserker.
+            Effects
+                - Added Astral (Brewed with cured membrane).
+                - Added Block Bane (Emits from berserker).
+            Enchantments
+                - Added Saltbound Tablet Enchantments.
+                - Added Enfeeble (Adds slowness to mobs).
+                - Added Sustain (Extends the duration of pink salt pillars).
+                - Added Rupture (Shatters into shards when it retracts).
+            Sounds
+                - Added "Pristine" Soundtrack (plays in pink salt caves).
+        1.4.1
+            - Fixed silver frame filled texture.
+- Geckolib (4.2.4 → 4.4.2)
+    -- Patch Notes --
+        4.3
+            - Swapped GeoReplacedEntityRenderer#shouldShowName to use provided entity argument instead of cached entity instance for better compat with entityculling.
+            - Fully strip failed optimisation due to seeming unfixable incompatibility with shaders.
+            - Added GeoRenderer#getPackedOverlay with partialTick, deprecate existing method for removal.
+            - Added DyeableGeoArmorRenderer - a native dyeable armour renderer for GeckoLib armour models.
+        4.3.1
+            - Swapped out the null parameters in ItemArmorGeoLayer#getModelForItem with their actual parameters.
+        4.4
+            - Re-added previously removed optimisation that toyed with animation conflicts. It's better with it than without it.
+            - Added in an isShaking to GeoEntity rendering, in-line with vanilla's LivingEntityRenderer#isShaking.
+            - Improved GeoEntity shouldShowName implementation to better match vanilla's modernised implementations, supporting teams and other conditions.
+        4.4.2
+            - Fixed isReRender not propagating in a handful of places.
+- Guard Villagers (2.0.8 → 2.0.9)
+- Healing Campfire (5.2 → 5.3)
+    -- Patch Notes --
+        - Improved mod icon compression, which lowers the jar file size.
+        - Updated mod URLs to the new GitHub location.
+        - (NeoForge) Updated to the new changes: Added 'type=' to mods.toml, and moved the modEventBus field.
+- Hybrid Aquatic (1.1.0 → 1.2.2)
+    -- Patch Notes --
+        1.2.0
+            Mobs:
+                - Added Lightfoot crab.
+                - Added Spider crab.
+                - Added Yeti crab.
+                - Added Vampire crab.
+                - Added Coconut crab.
+                - Added Horseshoe crab.
+                - Added Ghost crab.
+                - Added Flower crab.
+                - Added Giant isopod.
+                - Added Lobster.
+                - Added Shrimp.
+                - Added Crayfish.
+                - Added Karkinos, a new miniboss.
+                - Changed crabs into Dungeness crabs.
+                - Sea urchins can now break kelp plants.
+                - Giant clams changed from entities to tile entities.
+                - Remodeled Hermit crabs.
+                - Remodeled Fiddler crabs.
+                - Sharks now only drop teeth when their attacks are blocked with a shield (shark teeth functionality still not added).
+                - Updated mob caps.
+            Blocks:
+                - Added buoy.
+                - Added thermal vent, which drops a random amount of raw copper/iron/gold.
+                - Added sea sponge, which drops sponge chunks.
+                - Added giant clam block.
+            Items:
+                - Added 9 new claws.
+                - Added raw and cooked lobster.
+                - Added raw and cooked shrimp.
+                - Added raw and cooked crayfish.
+                - Added glowing potions and arrows.
+                - Added sponge chunk, used to craft sponge blocks.
+                - Added ominous hook, used to summon Karkinos.
+                - Added Karkinos Claw, which increases player reach when in offhand.
+                - Changed raw/cooked small fish meat into raw/cooked fish meat.
+                - Changed raw/cooked large fish meat into raw/cooked fish steak.
+            Visuals:
+                - Added marine snow, a weather phenomenon that appears in deep water during rain and storms.
+                - Added underwater fog that gets stronger as you go deeper.
+                - Removed whale shark glow.
+                - Updated some item and entity textures.
+            Effects:
+                - Added bleeding effect, inflicted by shark attacks, reduces your health to half its maximum.
+                - Added glowing, which can be obtained by brewing Glow Slime with an awkward potion.
+        1.2.1
+            - Hotfix for a conflict between the Create mod and Hybrid Aquatic 1.2.0.
+        1.2.2
+            - Added Umbrella Octopus.
+            - Tweaked spawning settings of everything.
+- Illager Invasion (8.0.3 → 8.0.4)
+    -- Patch Notes --
+        Changed
+            - Necromancer now drops zombie and skeletons heads as a rare drop.
+        Fixed
+            - Fixed crash on Skull Bolt impact.
+            - Fixed firecaller setting themselves on fire and not fleeing from iron golems.
+            - Fixed basher stun not updating.
+            - Fixed alchemists poising themselves.
+- Let's Do: Vinery (1.4.5 → 1.4.11)
+    -- Patch Notes --
+        1.4.6
+            - Implementation for NetherVinery.
+            - Grapevine Stems now using the #logs tag instead of just only oak_logs.
+            - Overhauled all Slab Variants - Grass will now also spread to and from Dirt / Grass slabs.
+            - Fixed an rarely occurred crash regarding the CompostableRegistry.
+            - Implemented Advancements! Completing them will reward you with a Banner that increases your regeneration by 10% in a 8 Block Radius.
+        1.4.7
+            - Fixed an OutOfBound Error caused by the CompostableRegistry. (Cristelknight)
+            - Fixed a PlacementError when using DynamicCrosshair. (Cristelknight)
+            - Improved the SpreadableGrassSlabBlock. (Cristelknight)
+            - AppleTreeSaplings won’t replace the Dirt Ground below it anymore when they grow.
+            - Added conditional Recipes for create.
+        1.4.8
+            - Slightly Changed following Textures: Cherry Floorboard, Cherry Planks, Cherry Pressure Plates, Cherry Fence, Bags, Loam.
+            - You can ride now Mules.
+            - Added Cherry Hanging Sign.
+            - Added a config option for the fermentation time. (thanks to clivet268)
+            - ObjectRegistry got rewritten - EveryCompat will now detect our Wood as well.
+            - Reduced Apple and Cherry spawn rate.
+            - Baskets cant be crafted anymore. Instead you can trade them with Winemaker Villagers. They act like mini shulker boxes.
+            - Changed ingredients for Cherry Planks from CherryLog item to CherryLog tag.
+            - Calendar has now different Pictures - each of them representing a Season. Change them by Right-Clicking.
+            - Removed the sun / coarse dirt requirements from all Grape Types.
+            - Removed color tint index from apple leaves.
+            - Reworked Lattice. (Note: Warped and Crimson are still experimental)
+            - Reworked Stackable Logs voxelshape.
+            - Reworked Winemaker Armor Model.
+            - Added Vinery Villagers Houses for Plains, Savanna, Desert and Taiga Villages. (Fabric Only)
+            - Minor language Improvements and Refactors.
+        1.4.9
+            - Fixed Winemaker Set Bonus.
+            - Fixed Basket loottable.
+            - Fixed Basket recipe.
+            - Fixed Bushy Leaves Texture Pack.
+            - Added an Additional Blockstate Check for Windows.
+            - Added Spanish translation. (illustietor)
+        1.4.10
+            - Fixed a Duplication Issue.
+            - Fixed Cabinet and Drawer Container Name.
+            - Fixed Translation Entries.
+            - Fixed a Data Entries such as: Mineable, Loottables.
+            - Changed Bags Sound Type.
+        1.4.11
+            - Fixed a few minor tag issues
+            - Fixed a few minor model issues
+            - Added all Lattices to the #climbable tag
+- Minecraft Dungeons: Artifact (3.0.0 → 4.0.1)
+    - Switched from CurseForge source to Modrinth source.
+    -- Patch Notes --
+        4.0.0
+            -- Changes --
+                - Rewrote configs to allow for more easily configurable aspects, especially for non-modpack devs.
+                - Propagated necessary changes throughout registries.
+                - Added explicit enchantment classes for `BeastBoss`, `BeastBurst`, `BeastSurge` and `Cooldown` to allow for greater configuration.
+                - Added `EnchantmentIDConfigHelper` to allow for easy adjustments.
+                - Loottable code allows for more granular control over spawn rate.
+                - Added configurable `loottables` and values for artifacts. (Fixed #37)
+                - Will be uploading to Modrinth. (Fixed #39)
+                - Refactored `LootRegistry`.
+            -- Bug Fixes --
+                - No longer crashing when dying with a `summonedEntity`.
+                - Added `buzzy_nest_bee` to `beehive_inhabitors` tag. (Fixed #31)
+                - Constrained Minecraft Dependency to crash on 1.20.2+.
+            -- Updates --
+                - Updated Russian Translation. (thank you, @Iamnotagenius)
+                - Added Mexican Spanish Translation. (thank you, @Binaris00)
+                - Adjusted formatting on Lang files for more easy reading.
+                - Updated Fabric API from `0.85.0+1.20.1` -> `0.91.0+1.20.1`.
+                - Updated Cloth Config from `11.0.99` -> `11.1.106`.
+                - Updated Licence to TDL 1.2.
+        4.0.1
+            - Renamed the local version of `EnchantmentHelper` -> `McdarEnchantmentHelper` to alleviate ambiguity with the vanilla `EnchantmentHelper`.
+            - Fixed a bug where the cooldown of some artifacts was not triggering properly, especially quivers, causing them to not function at all.
+            - Added a method overload for `mcdar$cooldownHelper` to allow for more flexibility with cooldown implementation with certain artifacts.
+- Minecraft Dungeons: Weapons (8.1.0 → 9.0.1)
+    -- Patch Notes --
+        9.0.0
+            -- Breaking Changes --
+                - Redid the McdwEnchantmentsConfig and McdwEnchantmentSettingsConfig to be easier to read and use.
+                - Removed EnchantStatsID.java, as it is no longer needed.
+                - Moved the following values from the McdwEnchantmentSettingsConfig to the McdwEnchantmentsConfig.
+                - ENIGMA_RESONATOR_DIVISOR -> offset value for ENIGMA_RESONATOR.
+                - DYNAMO_STACK_CAP -> offset value for DYNAMO.
+                - ENCHANTMENT_TRIGGER_BASE_CHANCE -> procChance value in proc-able enchantments.
+                - HEALING_FACTOR -> offset value for healing enchantments.
+                - directDamageEnchantmentMultiplier called the same thing, but moved to top of McdwEnchantmentsConfig.
+                - Propagated necessary changes throughout project.
+                - Configs will be reset; BACK UP YOUR CONFIG BEFORE UPDATING.
+                - Cleaned up AreaEffectCloudEntity spawns by combining AOECloudHelper#spawnStatusCloud and AOECloudHelper#spawnPickyStatusCloud into one method: AOECloudHelper#spawnAreaEffectCloudEntityWithAttributes.
+                - Cleaned up Predicate Registration for Bows and Crossbows in McdwClient, reducing it from 5 methods to 3.
+            Updates and Clarifications
+                - Added Contribution attributions to fabric.mod.json.
+                - Explicitly depend on >=1.20.0 <=1.20.1 of Minecraft.
+            Bug Fixes
+                - Fixed #253, No longer crash when using something other than a healing potion with Dipping Poison. (Thank you, @Aesthir!).
+                - Fixed #252, Ranged Enchantments now apply correctly on bows and crossbows and do not trigger when melee attacking with the bow or crossbow. (Thank you, @Scizith!).
+                - Fixed SummonedBeeEntity not having attributes.
+        9.0.1
+            - Fixed Default Config Value Mistakes, Notes, Version Bump.
+            - Fixed the following enchantments to properly show up in RandomSelection and the Enchanting Table.
+                - Shockwave
+                - Smiting
+                - Soul Devourer
+                - Soul Siphon
+                - Stunning
+                - Swirling
+                - Tempo Theft
+                - Thundering
+                - Weakening
+            - Fixed the following enchantments to show up in the Enchanting Table.
+                - Void Shot
+                - Void Strike
+                - Wild Rage
+            - Added notes to explain the values in the config.
+            - Clarified the formula for Enigma Resonator in the notes.
+- Midas Hunger (2.2.1 → 2.2.2)
+    -- Patch Notes --
+        - Added JP translation.
+        - Made some items compostable.
+- Moonlight Lib (2.8.65 → 2.10.11)
+    -- Patch Notes --
+        2.8.66
+            - Solved some concurrency issues with map data.
+        2.8.67
+            - Added pendulum animations utilities.
+        2.8.68
+            - Fixed network issue.
+        2.8.70
+            - Improved some fabric code.
+            - Improved some error handling and logging.
+        2.8.71
+            - API improvements.
+        2.8.72
+            - Fixed an issue with Fabric POI registration.
+        2.8.73
+            - Some fix related to configs defaults on Fabric.
+        2.8.74
+            - Fixed something with Quilt.
+        2.8.75
+            - Fixed color config crashing due to last update.
+            - Improved dynamic resource pack resource clearing.
+        2.8.76
+            - Updated map atlas compat to work with new version.
+        2.8.77
+            - Cleared up and fixed recent fuck ups with resources.
+        2.8.78
+            - Fixed another issue with packs.
+        2.8.79
+            - Fixed an important issue which invalidated the lazy map update config, making it so maps would update at vanilla rate instead of the optimized one.
+        2.8.80
+            - Fixed Fabric config menu.
+        2.8.81
+            - Fixed some broken codecs' default value.
+        2.8.82
+            - Fixed some baked quad transformer utility class not working as intended.
+        2.8.84
+            - Improved wood detection system.
+        2.8.86
+            - Added villager trade's codec.
+            - Further improved wood type detection.
+        2.8.87
+            - Fixed very critical issue added with 2.8.86.
+        2.9.0
+            - Added villager trade API.
+        2.9.1
+            - Hotfix for non-vanilla villager professions.
+        2.9.2
+            - Other villager trade stuff fixes.
+        2.9.3
+            - More villager trade stuff fixes.
+        2.9.6
+            - Moved villager trades to moonlight/villager_trades.
+        2.9.7
+            - Actually moved villager trades to moonlight/villager_trades.
+        2.9.8
+            - Minor improvements to wood detection system.
+            - Added no_op villager trade type, useful to replace existing data ones to disable them.
+        2.9.9
+            - Improved block placement override API.
+        2.9.10
+            - Fixed broken data villager trader.
+        2.9.12
+            - Fixed an issue with configured added no_op item trade type, useful to override existing trade jsons.
+            - Some changes to the map markers system.
+        2.9.13
+            - Fixed some issues with GUI render helpers.
+        2.9.14
+            - Fixed an issue with retexturing animated images.
+            - Added more utilities to animate items in first person renderer.
+        2.9.15
+            - Fixed an issue with configuration.
+        2.9.16
+            - Fixed messup with servers on patch 2.9.15.
+        2.9.17
+            - Added a simple shared variables API.
+            - Added 2 new methods to palette.
+            - Fixed vertex transformers not applying sprites and ambient occlusion correctly.
+        2.10.0
+            - Major rework to fluid system.
+        2.10.1
+            - Major rework to fluid system.
+        2.10.2
+            - Fixed messup.
+        2.10.3
+            - Fixed messup.
+        2.10.4
+            - Fixed some issues with empty fluid stacks.
+        2.10.5
+            - Fixed an important issue with fluid syncing.
+        2.10.6
+            - Fixed an issue with some buckets from modded liquids not getting accepted.
+        2.10.8
+            - Fixed another issue with fluids due to spawn chunk stuff.
+        2.10.9
+            - Improvements to assets generation system, should improve compat with some mods.
+            - Added some more rendering utilities.
+        2.10.10
+            - Fixed a minor memory leak on main menu.
+            - Added more random utilities.
+        2.10.11
+            - Fixed an issue with servers.
+- More Music Discs (32 → 33)
+    -- Patch Notes --
+        - Added new music discs from Schakavun.
+- Mutant Monsters (8.0.4 → 8.0.7)
+    -- Patch Notes --
+        8.0.5
+            -- Changes --
+                - Mutants now use a custom mob category for spawning, this ensures only a single mutant can exist at a time.
+                - The amount of entities spawned as a result of defeating a mutant (mainly skeleton parts and creeper eggs) is now capped to prevent issues with automatic mob farms.
+                - Reworked mutant skeleton arrow physics.
+            -- Fixes --
+                - Fix rendering crash with mutant enderman.
+                - Fix rare crash when mutant zombie is attacking.
+                - Fix thrown blocks being able to replace non-full blocks (like stairs and slabs) when landing.
+        8.0.6
+            - Revert spawn category changes from 8.0.5.
+        8.0.7
+            -- Addition --
+                - Added a config option for the max distance of the ender soul hand's teleport ability, also allows for disabling the ability all together.
+            -- Fixes --
+                - Fix crash when the mutant skeleton is firing arrows with the Bewitchment mod installed.
+                - Fix unable to use chemical X on Fabric.
+- Mythic Metals (0.18.2 → 0.19.3)
+    -- Patch Notes --
+        0.19.0
+            -- Addition --
+                - Introduced "Tidesinger Equipment".
+                    - Using the Aquarium Pearls you find sometimes when mining Aquarium, along with a handful of Coral, you can craft yourself a set of Tidesinger Armor or Tools.
+                    - This gear is superior to regular Aquarium in every way, as well as providing a direct swim speed increase.
+                    - The weapons (Sword and Axe) are special, as they come with Riptide III!
+            -- Changes --
+                - Texture Update
+                    - Aquarium (block, ingot, tools, armor, pearl)
+                    - Carmot (block, armor items, tools)
+                    - Celestium (block, ingot, tools, armor items, elytra item)
+                    - Kyber (block, ingot, tools, armor)
+                    - Manganese (blocks, ingot, raw ore)
+                    - Metallurgium (block, ingot)
+                    - Midas Gold (block, ingot)
+                    - Morkite (block and item)
+                    - Prometheum (block, ingot, armor items)
+                    - Quadrillum (blocks, ingot, raw ore)
+                    - Runite (blocks, ingot, arrows)
+                    - Silver (block and ingot)
+                    - Star Platinum (blocks, ingot, tools, armor)
+                    - Starrite (block and item)
+                    - Steel (blocks, ingot, tools, armor)
+                    - Tin (block and ingot)
+                    - Unobtainium (storage block and item)
+                - Added Banglum TNT minecarts.
+                - Removed unnecessary Carmot armor rendering.
+                - Updated and adjusted Better Combat integration.
+                - Durasteel Engine is craftable from tags (allowing compatibility with mods like PSWG).
+                - Added ingots and nuggets to common tags.
+                - Added compatibility for Enhanced Explosions with Banglum Nukes.
+                - The Enchanted Midas Gold Block is now a block! Place it down in your world, admire it, enjoy it.
+                - Added an advancement for crafting a Prometheum Bouquet.
+                - New Carmot Staff ability: Enchanted Midas Gold Block - Grants Luck V in a large area around user.
+                - Added a Sponge Nuke Core.
+                - Added a new config option for disabling an Easter Egg with Carmot staffs
+                - Added anvils to the 'c:anvils' item tag.
+                - Added a debug command for placing all block sets, '/mythicmetals place-all-blocks'
+                - Balancing
+                    - Increased the durability of Mythril Armor slightly. (30 → 31, on average 14 more durability)
+                    - Decreased the durability of Orichalcum Armor. (41 → 39, on average 28 less durability)
+                    - Increased the damage dealt by Quadrillum tools slightly. (6.5 → 6.7)
+                    - Increased the mining speed of Quadrillum tools. (5.0 → 5.5)
+                    - Reduced the attack speed of Quadrillum tools.
+                    - Reduced the attack speed of the Osmium Axe.
+                    - Made Silver Ore and Blocks easier to break.
+                    - Made Quadrillum Ore and Blocks much easier to break.
+                    - Prometheum now becomes overgrown much earlier. (2000 → 1200 durability repaired)
+                    - Increased attack speed of Engrained Prometheum. (5% → 8%)
+                    - Prometheum auto repair tick now happens anywhere in your inventory, instead of only while equipped. This should make the effect more noticeable.
+                    - Increased Mythril Drill auto repair when it is activated.
+                    - Increased Aquarium Pearl drop rate. (2% → 2.5%)
+                    - Increased Aquarium Ore spawn range. (from 31 to 63 → from 21 to 69)
+                    - Increased Aquarium Ore spawn chances. (4 → 5)
+                    - Greatly increased the chance of bartering for an Enchanted Midas Gold Block. (3.5% → 14%! You still need to hit it on the loot table first)
+                    - Legendary Banglum Tools are now repaired with Banglum ingots instead of Chunks. (now consistent with armor)
+                    - Increased the durability of Copper Tools. (125 → 187)
+                    - Celestium Equipment is now fireproof.
+                    - Increased Palladium Ore spawn range slightly. (from 14 to 36 → from 13 to 38)
+                    - Increased Palladium Ore max vein size. (5 → 6)
+            -- Fixes --
+                - Fixed an issue related to music discs being eaten by the jukebox.
+                - Fixed Air appending a Mythril Drill Upgrade tooltip.
+                - Fixed the Mythril Drill auto-repair not working.
+                - Fixed the Deepslate Runite Block not playing the correct sound effect.
+                - Fixed a crash by adding compatibility with Custom Piglin Bartering.
+        0.19.1
+            - Fixed a crash on startup due to unregistered blocks (intrusive holders).
+        0.19.2
+            - Fixed a crash on startup due to unregistered blocks (intrusive holders).
+        0.19.3
+            -- Changes --
+                - Added new anvil textures for Carmot and Star Platinum.
+                - Storage Blocks now follow the vanilla naming scheme. (Ex. Adamantite Block → Block of Adamantite)
+                - Increased Celestium Armor Durability. (38 → 41, approx. +72 durability per piece)
+                - Decreased Celestium Leggings Armor. (8 → 7)
+                - Decreased Metallurgium Leggings Armor. (9 → 8)
+            -- Fixes --
+                - Fixed an issue where anvils would be destroyed upon falling too far.
+                - Fixed the Platinum Watch not properly showing the time.
+                - Added recipe for Sponge Nuke Core.
+                - Fixed the equip subtitles of Osmium Armor, Osmium Chainmail and Tidesinger Armor.
+                - Adjusted Quadrillum Nugget position in inventory.
+                - Changed Carmot Armor tag implementation, which fixes compatibility with Truly Modular.
+- Paladins & Priests (RPG Series) (1.0.4 → 1.0.5)
+    -- Patch Notes --
+        - Added compatibility for c:wood_sticks in recipes #16.
+        - Added Spanish translation, thanks to @SirColor.
+        - Updated Chinese translation, thanks to @sillymoon.
+        - Fixed weapon tags not loading, when BetterX mods are not present.
+- Patchouli (81 → 84)
+- Pehkui (3.7.11 → 3.7.12)
+    -- Patch Notes --
+        - Fixed brush reach not being scaled.
+- Puzzles Lib (8.1.9 → 8.1.17)
+    -- Patch Notes --
+        8.1.11
+            - Fixed anonymous network handlers allowing for duplicate IDs.
+        8.1.12
+            - Fixed missing 'ToolTypeHelper::isTrident' method.
+        8.1.13
+            - Fixed unloading of a server config placed in a world's 'serverconfig' directory failing and causing some processes to hang.
+        8.1.14
+            -- Changes --
+                - Delayed event initialization to avoid being blamed for class loading errors.
+            -- Fixes --
+                - Fixed killing entities with custom damage sources not yielding any experience.
+                - Fixed compatibility with Hephaestus by moving problematic code to the relevant mod, so only that one mod is incompatible until the issues is properly resolved on Hephaestus' end.
+        8.1.15
+            - Fixed 'TagsUpdatedCallback' & 'ServerLifecycleEvents.Starting' not running on dedicated servers.
+        8.1.16
+            - Fixed crash when breaking crops with Farmers Delight's sickle.
+        8.1.17
+            - Fixed item model overrides not applying on Forge.
+- Repurposed Structures - Quilt/Fabric (7.1.11 → 7.1.13)
+    -- Patch Notes --
+        7.1.12
+            - Fixed crash with Blueprint.
+        7.1.13
+            - Fixed a startup crash with 7.1.12.
+- Resourceful Config (2.1.0 → 2.1.2)
+    -- Patch Notes --
+        2.1.1
+            - Added button annotation to be used in configs.
+        2.1.2
+            - Added sort order for category annotations.
+            - Made config screen a pause screen.
+- Roughly Enough Items (REI) (12.0.674 → 12.0.684)
+- Runes (0.9.10 → 0.9.11)
+- Scorched (1.1.3d → 1.1.3e)
+    -- Patch Notes --
+        - TNT fuse of Desert Pyramid TNT has been fixed for 1.20.3+.
+        - The summoned Blaze in Badlands Pyramids now summons fire around the arena and its health has been increased from 80 → 100.
+        - Golems shooting is now more accurate (based on the player's location 13 ticks ago).
+        - You can no longer shield block golem attacks.
+        - Made the candles in the altar room of the Badlands Pyramid actually centered.
+        - Ladders can no longer be broken by Golem lasers.
+        - Changed the pack.png to the modrinth one.
+        - A few random particle/animation tweaks.
+- Simple Voice Chat (2.4.28 → 2.4.32)
+    -- Patch Notes --
+        2.4.29
+            - Updated Ukrainian translation.
+            - Updated Chinese traditional translation.
+        2.4.30
+            - Minor improvements.
+        2.4.31
+            - Fixed replay-voice-chat compatibility.
+        2.4.32
+            - Fixed compatibility with Sounds Physics Remastered.
+            - Updated French translation.
+- Simply Swords (1.51.5 → 1.54.0)
+    -- Patch Notes --
+        1.52.0
+            - Added new unique Emberlash.
+            - Added new unique Star's Edge.
+            - Added new unique Wickpiercer.
+            - Added new unique Waxweaver.
+            - Added new unique Hiveheart.
+            - Soul Pyre texture reworked.
+            - Fixed an issue that prevented the repair of the following items:
+                - Diamond Chakram
+                - Diamond Scythe
+                - Diamond Halberd
+            - Friendly fire logic should now respect allied tameables.
+            - Updated License.
+        1.53.0
+            - Added new unique Tempest.
+            - Added compatibility for a future Eldritch End patch.
+            - Damage from Hivemind Bee summon reduced.
+            - Reduced Wickpiercer's base attack speed.
+            - Reduced Wickpiercer's Flicker Frenzy attack speed bonus.
+            - Reduced Emberlash's Smoulder damage modifier.
+            - Default chest droprates for all weapons reduced.
+        1.54.0
+            - Added new unique glaive 'Flamewind'.
+            - Added new unique claymore 'Ribboncleaver'.
+            - Fixed emissive textures not working in some conditions.
+- Small Ships (a2.3.3 → b1.1)
+    -- Patch Notes --
+        b1.0
+            - Added Drakkar.
+            - Added ice break feature.
+            - Added Drakkar crafting.
+            - Added simple dismount entity by right clicking.
+            - Added repairing feature.
+            - Added new mod icon.
+            - Added naming with name tag.
+            - Added sunken feature.
+            - Added sunken ships cannot be mounted.
+            - Added sunken ships will despawn after configurable minutes.
+            - Added shield upgrade to Drakkar.
+            - Added config to adjust shield damage reduction.
+            - Added config to chaneg the speed unit to [km/h, knots, m/s mph].
+            - Added config to blacklist entities mounting.
+            - Added config to disable knock-back feature.
+            - Added config to disable collision damage feature.
+            - Added methods for reflection (mod compatibility).
+            - Fixed ships cannot float on water blocks.
+            - Fixed Cog model issues.
+            - Fixed Galley paddle positions.
+            - Fixed collision damage does not disable when set to 0.
+            - Fixed other minor issues.
+        b1.1
+            - Added mounting feature (right-clicking a mob while sitting in the ship will mount the mob).
+            - Fixed missing wood types and item for Drakkar.
+            - Fixed dismount feature does not work on modded entities.
+            - Fixed Drakkar model.
+            - Fixed sunken status is not saved when leaving the world.
+            - Fixed cannons not dropping when ship is destroyed.
+            - Fixed up side down shield and banner pattern.
+            - Fixed ships cannot be destroyed after one hit when being sunken a few seconds.
+            - Improved mod compatibilty with workers and recruits mod.
+- Spell Engine (0.12.4 → 0.12.5)
+    -- Patch Notes --
+        - Fixed channeled spell particles not being rendered, from player behind (for example: Fire Breath).
+        - Added some comments to config.
+- Supplementaries (2.6.30 → 2.8.4)
+    -- Patch Notes --
+        2.6.34
+            - Fixed server issue on Fabric.
+        2.7.0
+            - Added hat stand.
+        2.7.1
+            - Hat stand fixes.
+            - Frogs can fit in jars.
+        2.7.7
+            - Updated quark integration.
+            - Added config to allow more blocks to be soaped.
+            - Fixed an issue with colored markers.
+            - Added tipped arrow cleaning recipe.
+            - Added FD compat tag to Blaze Rods.
+        2.7.8
+            - Fixed mod shaders not working anymore.
+        2.7.9
+            - Fixed random map location firing for non-supplementaries custom maps.
+        2.7.10
+            - Fixed cave urns not spawning frequently enough.
+            - Added skibidi toilet.
+        2.7.11
+            - Fixed spectator shaders being nuked.
+        2.7.12
+            - Added 10 new flute songs. (Unrelated to skibidi toilet)
+            - Fixed Fabric worldgen configs not working.
+        2.7.13
+            - Fixed server crash.
+            - Removed some config from Fabric as they can't be made to work. Use datapacks instead.
+        2.7.14
+            - Fixed some mod compat issues with Quiver.
+            - Added 3 Christmas flute songs. (Thanks to Artkek)
+        2.7.17
+            - Fixed dispenser minecart not dropping their content.
+            - Added API for red merchant trades.
+            - Improved colored map performance by adding a color cache. Colors will be less accurate but there's a config to turn them like they were.
+            - Made slice map update thread safe.
+        2.7.18
+            - Greatly improved performance of colored and light maps update.
+            - Added cyrillic antiquable ink font.
+            - Also added some common accented characters.
+            - Added toki pona translation.
+            - Haunted harvest corn can fit in flower boxes.
+        2.7.20
+            - Hotfix for out of bound issue.
+        2.7.21
+            - Added some mod compat stuff with placed books.
+            - Fixed wall lanterns attachment model.
+            - Fixed global occlusion shape.
+            - Added global blacklist tag for cages and jars.
+        2.7.23
+            - Fixed IF compat on Fabric.
+            - Fixed hat stand spawn packet causing issues on Fabric.
+        2.7.25
+            - Made items tooltips functions server safe.
+            - Fixed some missing models for bookpiles.
+        2.7.28
+            - Red merchant trades are now entirely data driven.
+            - Fixed some server side mixin issues.
+        2.7.29
+            - Fixed mixin.
+        2.7.30
+            - All mod custom added trades use Moonlight new data driven trade system.
+            - You can now add your own as well to any villager.
+        2.7.31
+            - Fixed antique ink not applying to signs.
+            - Fixed a rare issue with FTB chunks causing a deadlock.
+            - Fixed candle holder model rotation.
+            - Fixed some items missing from Creative tabs.
+            - Fixed Cartographer Quill retry message.
+            - Fixed hanging pots.
+            - Fixed block colors.
+        2.7.32
+            - Fixed a rope dupe with ropes and pulleys.
+        2.7.35
+            - Added config to move S button.
+            - Reworked placeable book system internals.
+            - Fixed a compat issue with Curse Loot function.
+            - Fixed wall enderman head not giving changing power signal.
+            - Structure maps' JSON can now accept tags as well as direct reference to the structure or even structure lists.
+        2.7.36
+            - Made some colored map code more resiliant.
+            - Improved bookpile code, possibly fixing an issue.
+            - Removed turn table from functional tab.
+        2.8.0
+            - Many bug fixes.
+            - Moved many tweaks feature to Amendments mod.
+        2.8.1
+            - Fixed candle's tag being broken.
+            - Fabric version now has all the Forge extension methods. They won't do anything on their own but might if you have Porting Lib leading to better parity.
+        2.8.2
+            - Rewrote all faucet interactions.
+            - Added compat for Rat Milk Cauldron.
+            - Fixed Dispenser Minecart not dropping.
+            - Added new Lapis' bricks and checker blocks' textures.
+            - Added more translation lines.
+        2.8.4
+            - Some fixes to recent faucet fluid changes.
+            - Present has a new texture for when its slot is empty.
+- Tectonic (2.1.1 → 2.2.1)
+    -- Patch Notes --
+        2.2
+            - Massively improved mountain generation to be less spiky and more like proper mountains.
+        2.2.1
+            - Fixed Large Biomes / SuperFlat not functioning.
+            - Fixed Forge 1.20.2+ crashing on startup.
+            - Fixed an issue with hardcoded seeds on Forge 1.18.2.
+            - Tweaked Oceanside Cliff generation:
+                - Even less snow should generate than before. There's still a very small amount, which is fixed if you have Lithostitched installed.
+                - Cliffs generally will stop closer to oceans, preventing too much land biome "spilling" into ocean terrain.
+                - In addition to the previous change, ocean biomes will generate farther into cliffs near sea level, further reducing spillage.
+                - The bottom layer of cliff carving has been raised, preventing weirdness with ocean biome terrain generating higher than where cliffs carved down to.
+                - Steep cliffs similar to the ones in vanilla will also generate alongside the carved cliffs.
+            - Significantly reduced the amount of Lush Caves leaking onto the surface near underground river entrances.
+            - Removed invalid license file.
+            - Removed Discord link.
+- Terrestria (6.0.12 → 6.0.13)
+    -- Patch Notes --
+        - Avoid placing TerraBlender's placeholder biome.
+        - Place Fabric biome API End biomes.
+        - Requires Fabric Loader 0.14.25+.
+        - Added Stripped Small Oak Log to c:stripped_logs.
+- Thermoo (2.1.0 → 2.1.2)
+    -- Patch Notes --
+        2.1.1
+            - Temperature-affected entities will now only sync their temperature to players within 32 blocks of their location.
+            - Temperature-affected entities will now attempt to sync to players every 20 ticks.
+            - This update can be added to servers without a client update.
+        2.1.2
+            - Added a new 'applyAwareHeat' method to the environment controller.
+            - Cleaned up the cardinal components internals a bit.
+            - Made the 'getEnvironmentTemperatureForPlayer' return the base local temperature by default instead of 0.
+- Traveler's Backpack (9.1.8 → 9.1.9)
+    -- Patch Notes --
+        - Upgrades can be found in:
+            - Abandoned Mineshaft
+            - Simple Dungeon
+            - Desert Pyramid
+            - Shipwreck Treasure
+            - Woodland Mansion
+            - Nether Bridge
+            - Bastion Treasure
+            - End City Treasure
+        - Changed mod icon.
+        - Villager backpack can be obtained from Librarian villager on 3rd level.
+        - Tool slots can be accessed without need to remove latest tool.
+        - Fixed invisible backpack bug on server.
+        - Allowed emptying tanks into partially filled containers.
+        - Fixed throwing items when clicking on buttons.
+- Traverse (7.0.10 → 7.0.11)
+    -- Patch Notes --
+        - Requires Fabric Loader 0.14.25+.
+        - Avoids placing TerraBlender's placeholder biome.
+        - Place Fabric biome API End biomes.
+- Tree Harvester (8.3 → 8.7)
+    -- Patch Notes --
+        8.4
+            - Improved mod icon compression, which lowers the jar file size.
+            - Updated mod URLs to the new GitHub location.
+        8.5
+            - Fixed huge brown mushrooms not being harvested correctly.
+            - Improved compatibility with other mods.
+        8.7
+            - Added an extra check if a tree contains leaves placed by players. If found, the tree harvester feature is disabled.
+- Ube's Delight (0.1.4 → 0.1.5b)
+    -- Patch Notes --
+        0.1.5
+            - Advancements.
+            - New items:
+                - Rolling Pin
+                - Bread:
+                    - Pandesal
+                    - Ube Pandesal
+                    - Ensaymada
+                    - Ube Ensaymada
+                    - Hopia Munggo
+                    - Hopia Ube
+            - New block:
+                - Single Halo Halo
+                    - Shift while holding to place.
+                    - Right click with a knife to rotate.
+                - Baking Mat
+                    - 27 recipes.
+                    - REI support.
+            - Updated blocks:
+                - Punch Bowl: Halo Halo, Ube Milk Tea
+                    - Updated models, textures and subtitles.
+                    - Can now add drinks back.
+            - Recipes now work with the vanilla recipe book.
+                - Also compatible with Recipe Book Delight for the cooking pot.
+            - Polvorone recipe change
+                - Now uses the baking mat instead of the furnace to finish, replicate the forming of each cookie instead of baked.
+            - Integrations:
+                - Origins
+                    - meat
+                    - ignore_diet
+                - Presence Footsteps
+                    - Kalan
+                    - Baking Mat
+                    - Ube Cake
+                    - Leche Flan
+                    - Halo Halo Bowl
+                    - Ube Milk Tea Bowl
+                    - Lumpia Platter
+                    - Ube Crop
+                    - Garlic Crop
+                    - Ginger Crop
+                    - Lemongrass Crop
+                    - Wild Ube
+                    - Wild Garlic
+                    - Wild Ginger
+                    - Wild Lemongrass
+            - Wild flower update:
+                - Ube, Garlic, Ginger can now be placed in flower pots.
+                - Lemongrass updated.
+            - Updated textures
+                - Lemongrass Crop
+                - Ube
+                - Ginger
+                - Garlic
+                - Lemongrass
+                - Ginger Crate
+                - Garlic Crate
+                - Lemongrass Crate
+                - Poisonous Ube
+                - Ube Milk Tea
+                - Lumpia Wrapper
+                - Ube, Ginger Cookie (moved 1 pixel up to match other cookies)
+                - Polvorone
+                - Pinipig Polvorone
+                - Ube Polvorone
+                - Cookies and Cream Polvorone
+                - Icon
+                - Banner
+                - Lumpia Feast
+        0.1.5a
+            - Removed empty tooltip from Baking Mat.
+        0.1.5b
+            - Fixed some food not finishing in cooking pot:
+                - Lumpia.
+                - Tocino.
+                - Chicken Inasal.
+                - Leche Flan.
+- Universal Graves (3.0.0 → 3.0.1)
+- Waystones (14.0.2 → 14.1.3)
+    -- Patch Notes --
+        14.1.0
+            - Added Crumbling Attuned Shard, an attuned shard that is used up when teleporting.
+            - Added waystones:warp_plate recipe type, allowing to define new recipes for the Warp Plate.
+            - Fixed buckets not having any effect on waterlogged waystones.
+            - Fixed warp stone cooldown getting corrupted into millions of seconds.
+            - Restricted the warp plate's center slot to a single item to prevent item lost when crafting attuned shards.
+            - Added Waystones to Cherry and Bamboo Repurposed Structures villages.
+            - Injected waystone pieces into Repurposed Structures zombie village variants.
+        14.1.1
+            - Fixed being unable to join multiplayer server.
+        14.1.2
+            - Fixed warp plate recipes breaking after a single shard was crafted.
+            - Fixed warp plate showing dust instead of warp particles even if the target is valid.
+        14.1.3
+            - Fixed warp plates claiming to have lost attunement on dedicated servers.
+- Wilder Wild (2.1.13 → 2.3.2)
+    -- Patch Notes --
+        2.1.14
+            - Fixed compatibility issues with Create's List Filter.
+            - Updated embedded FrozenLib to 1.4.4.
+        2.2
+            -- Additions --
+                - Added the Crab!
+                    - Crabs are neutral mobs that spawn in Mangrove Swamps, Warm Oceans, Lukewarm Oceans, Deep Lukewarm Oceans, Oceans, Deep Oceans, Warm Beaches, Beaches and Cypress Wetlands.
+                    - If no players are close to a Crab and it's not been disturbed for a while, the Crab will hide in the ground.
+                    - If a player comes nearby or a loud vibration occurs, the Crab will come back out of hiding.
+                    - When attacked, the Crab will run towards its attacker and call all other Crabs nearby, even those in hiding, for backup.
+                    - Baby Crabs cannot attack, and will instead panic.
+                    - Can be bred with Kelp.
+                    - Can climb up walls.
+                    - Can be scooped up in Buckets.
+                    - Has a chance to drop its Claw upon death (only when killed by a player), which can be cooked.
+                    - The Crab's Claw can also be brewed with an Awkward potion to create a Potion of Reaching.
+                - Added the Reach Boost effect!
+                    - Extends the player's reach by 1 block per level.
+                    - Does not affect attacking, only impacts interactions with Items and Blocks including both placing and breaking.
+                        - There is, however, a config option to let this impact attack reach.
+            -- Changes --
+                - Added partial Japanese language support.
+                - Tweaked leaf decay distance to 12 in order to accommodate for Palm Fronds, so they now work like regular leaves.
+                    - Other leaves will still cap out at 7, but can be changed with commands or a Debug Stick to go up to 12.
+                - Made Palm Fronds less dense on average.
+                - Removed the custom distance detection from Palm Crowns.
+                - Added Palm Crowns to tags it was missing from.
+                - Reworked how Coconuts are placed on Palms, so they should no longer break upon generation.
+                - Added PalmTreeFeature to handle Palms' unique Coconut growth and Frond distance detection.
+                - Milkweed now plays a sound when rustled.
+                - Milkweed can now be sheared with a Dispenser.
+                - Glory of the Snow can now be sheared with a Dispenser.
+                - Prickly Pear's damage source has been added to the bypasses_armor tag.
+                - Tumbleweed entities will now drop themselves if killed by any entity with Silk Touch, instead of only doing so when killed by a player.
+                - Increased the chances of a flickering Firefly spawning. (smooth pulsing vs. flickering)
+                - Changed how flickering Fireflies calculate their colors.
+                - Display Lanterns will now interact with Redstone Comparators, outputting a full signal if they have an item inside, or a signal based upon how many Fireflies are placed inside.
+                - Display Lanterns will now properly spawn Fireflies that were held inside of them when broken.
+                - Slightly optimized Jellyfish rendering with the rainbow easter egg.
+                - Reworked how clipping works with Waterlogged Mesoglea, as it will now apply to all entities as opposed to just players as is much more stable.
+                    - This comes alongside BlockGetterMixin having much cleaner code, and the removal of IN_MESOGLEA in WilderSharedConstants.
+                - Osseous Sculk will now cover their branches in Sculk Veins when its base is converted to Sculk.
+                - Increased the chances of larger Osseous Sculk generating during worldgen.
+                - Sculk Shriekers will now only create Sculk Bubbles underwater if the Shrieker Gargling config is enabled.
+                - Stone Chests will now interact with Redstone Comparators, outputting a signal based on how high their lid is lifted.
+                - Echo Glass now occludes Vibrations.
+                - Added more config options for the Warden.
+                    - Added a config option to control whether or not the Warden should be able to swim.
+                    - Added a config option to control whether or not the improved digging animation should be used.
+                    - Added a config option to control whether or not the improved emerging animation should be used.
+                    - The Warden's animation configs will no longer require the game to restart.
+                    - This config option should now result in all Warden changes becoming toggeable.
+                - The Warden's death particles will now only spawn at the Warden's position as opposed to spawning within its entire hitbox.
+                - The Allay's keyframed dance animation config will no longer require the game to restart.
+                - Landing/Potion sound code will no longer attempt to run on the client.
+                - Landing Ender Pearls will now play sounds in their owner's sound category (Zombies would be Hostile, and Players would be Player).
+                - Added a config option to control whether or not Lightning Bolts should be able to scorch Sand blocks, instead of being hardcoded.
+                - Added a config option for whether or not Block particles will spawn upon a Lightning Bolt striking.
+                - Added a config option for whether or not Smoke particles will spawn upon a Lightning Bolt striking.
+                - The config will now sync between server and client.
+                    - Operators of servers will modify the server's config upon modifying it on their end.
+                    - Non-operators will see that config options that don't solely pertain to the client will be blocked out and set to the server's value.
+                - Added a "New Frosted Ice Cracking" config option to control Frosted Ice's updated cracking (playing sounds and spawning particles).
+                - Added a config option for whether or not Dripleaves will use updated Redstone powering functionality.
+                - Added a config option for whether or not advancements will be modified.
+                - Swapped the placement of the Misc and Worldgen config tabs.
+                - Refactored many aspects Wilder Wild's configured features' field names to be more consistent with Vanilla.
+                - Removed LeavesAroundTopTreeDecorator.
+                - Removed additional Plains flowers from Meadows.
+                - Increased the amount of flowers that typically generate in Meadows.
+                - Removed the Fabric Loader version requirement in hopes it will fix issues with Quilt.
+                - Changed the grammar of Wilder Wild's advancements to align with Vanilla's.
+                - Instrument items will now properly play on servers instead of immediately cutting out.
+                - Disabled remapping for some methods and fields referenced in mixin of mods to hopefully prevent possible issues.
+                - Moved all packet handling to 'FabricPacket' classes to improve the longevity and organization of Wilder Wild's codebase.
+                - Refactored, cleaned up and reworked multiple classes and mixins to improve internal organization, stability and code integrity.
+            -- Fixes --
+                - Fixed compatibility between Wilder Wild's Stripped Logs and Create.
+                - Fixed Fireflies with the Nectar easter egg not properly rendering their glowing overlay.
+                - Fixed Firefly Bottles with the Nectar easter egg not using the Nectar texture.
+                - Fixed an issue pertaining to Silk Touch with the Display Lantern's loot table.
+                - Fixed Jellyfish no longer spawning in Jellyfish Caves.
+                - Fixed odd timing on Floating Sculk Bubbles' scaling.
+                - Fixed compatibility with Roughly Enough Resources.
+                - Hopefully resolved world generation issues with C2ME.
+- Wizards (RPG Series) (1.0.4 → 1.0.5)
+    -- Patch Notes --
+        - Added compatibility for 'c:wood_sticks' in recipes.
+        - Fixed 'wizards:staves' tag when BetterX mods are not present.
+        - Updated Chinese translation.
+## Mods Removal ##
+- Automatic Doors
+    - Causing confusion for existing doors' contraption.
+- Charm of Undying
+    - Little to no usage.
+- Double Doors
+    - Little to no usage, also causing nuisance for certain decoration purpose.
+- Hand Over Your Items
+    - Not working.
+## Config Adjustments ##
+- Bosses of Mass Destruction
+    - Lich
+        - Health: 1200 → 3600
+        - Exp: 1500 → 4500
+    - Obsidilith
+        - Health: 2000 → 4000
+        - Exp: 1000 → 5000
+    - Gauntlet
+        - Health: 2000 → 4000
+        - Exp: 1000 → 5000
+    - Void Blossom
+        - Health: 1600 → 3800
+        - Exp: 1000 → 4750
+- The Graveyard (FABRIC)
+    - Corrupted Champion
+        - Health during casthing phase: 1500 → 3500

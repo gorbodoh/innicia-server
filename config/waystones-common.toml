@@ -75,7 +75,7 @@ leashedDenyList = [  ]
 restrictRenameToOwner = false
 
 # If enabled, only creative players can place, edit or break waystones. This does NOT disable the crafting recipe.
-restrictToCreative = true
+restrictToCreative = false
 
 # If enabled, leashed mobs will be teleported with you
 transportLeashed = true
@@ -98,7 +98,7 @@ dimensionDenyList = [  ]
 forceSpawnInVillages = true
 
 # Approximate chunk distance between waystones generated freely in world generation. Set to 0 to disable generation.
-frequency = 50
+frequency = 25
 
 # Set to 'PRESET_FIRST' to first use names from the custom names list. Set to 'PRESET_ONLY' to use only those custom names. Set to 'MIXED' to have some waystones use custom names, and others random names.
 nameGenerationMode = "PRESET_FIRST"
@@ -115,7 +115,7 @@ worldGenStyle = "BIOME"
 blocksPerXpLevel = 1000
 
 # The base xp level cost when travelling between dimensions. Ignores block distance.
-dimensionalWarpXpCost = 10.0
+dimensionalWarpXpCost = 20.0
 
 # The multiplier applied to the base xp cost when teleporting to a global waystone through any method.
 globalWaystoneXpCostMultiplier = 0.0
@@ -148,5 +148,5 @@ warpStoneXpCostMultiplier = 0.0
 waystoneXpCostMultiplier = 1.0
 
 # How much xp is needed per leashed animal to travel with you
-xpCostPerLeashed = 1
+xpCostPerLeashed = 0
 

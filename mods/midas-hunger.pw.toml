@@ -1,13 +1,13 @@
 name = "Midas Hunger"
-filename = "midas-hunger-2.2.1+1.20.jar"
+filename = "midas-hunger-2.2.2+1.20.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/abF2tqnb/versions/V8nVzo6r/midas-hunger-2.2.1%2B1.20.jar"
+url = "https://cdn.modrinth.com/data/abF2tqnb/versions/ijqRsptb/midas-hunger-2.2.2%2B1.20.jar"
 hash-format = "sha1"
-hash = "3a3f28bbff7099b209dcbfd65b1932c3cab6780b"
+hash = "0315f99b3070a164239e0b13d3c2fc7d4387365e"
 
 [update]
 [update.modrinth]
 mod-id = "abF2tqnb"
-version = "V8nVzo6r"
+version = "ijqRsptb"

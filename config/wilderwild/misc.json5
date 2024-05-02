@@ -1,6 +1,8 @@
 {
+	"modifyAdvancements": true,
 	"cloudMovement": true,
 	"particleWindMovement": 100,
+	"fireworkWindMovement": 100,
 	"biomeAmbience": {
 		"deepDarkAmbience": true,
 		"dripstoneCavesAmbience": true,

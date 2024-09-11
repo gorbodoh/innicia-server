@@ -1,0 +1,13 @@
+name = "Mine Cells - Dead Cells Mod"
+filename = "minecells-1.8.4+patch1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/9Qdvz1OV/versions/QZAjsrH4/minecells-1.8.4%2Bpatch1.jar"
+hash-format = "sha1"
+hash = "66d09787e6daca295647bb930c870e3fe4e12c3f"
+
+[update]
+[update.modrinth]
+mod-id = "9Qdvz1OV"
+version = "QZAjsrH4"

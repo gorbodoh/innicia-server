@@ -21,5 +21,6 @@
       "uuid": "0612ed2a-3ce5-11ed-b878-0242ac120002",
       "bonus_per_stack": 0.1
     }
-  }
+  },
+  "resistance_reduction_cap": 0.75
 }

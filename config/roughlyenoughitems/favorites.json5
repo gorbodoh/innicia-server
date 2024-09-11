@@ -1,5 +1,8 @@
 {
-	"favorites": [],
+	"favorites": [
+		"{data:{Count:1b,id:\"railways:smokestack_diesel\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{Count:1b,id:\"railways:link_and_pin\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}"
+	],
 	"hiddenFavorites": [],
 	"displays": []
 }

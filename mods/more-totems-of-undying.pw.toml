@@ -1,0 +1,13 @@
+name = "More Totems of Undying"
+filename = "more-totems-mod-2.16.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Xt0pMhSq/versions/rOWXHX42/more-totems-mod-2.16.0.jar"
+hash-format = "sha1"
+hash = "bc6c1078fb24db393a8c64a7032efbe90ec013e9"
+
+[update]
+[update.modrinth]
+mod-id = "Xt0pMhSq"
+version = "rOWXHX42"

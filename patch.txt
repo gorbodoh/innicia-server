@@ -1,95 +1,45 @@
-# Patch v2.2.0
-- Bug fixes and quality of life changes!
+# Patch v3.0.0
+- The industrial revolution!
 ## New Mods ##
-- Coffins (1.3.0): Replacement mod for Universal Graves.
-- Farmer's Delight Refabricated (2.1.2): Replacement mod for Farmer's Delight.
-- Healing Campfire: Added back to modpack.
-- Ranged Weapon API (1.1.2): Dependency mod of Archers (RPG Series) (1.2.5).
-- Shield API (1.0.1): Dependency mod of Paladins & Priests (RPG Series) (1.3.4).
+- True Ending: Ender Dragon Overhaul [1.1.0c]
+- Beacon Overhaul [1.8.4]
+- More Totems of Undying [2.16.0]
+- Botarium [2.3.4] : Dependency mod of Ad Astra [1.15.18]
+- Ad Astra [1.15.18]
+- Immersive Aircraft [1.0.1]
+- Gazebos (RPG Series) [1.1.1]
+- Rogues & Warriors (RPG Series) [1.1.0]
+- Create Fabric [0.5.1.f]
+- Create: Steam 'n' Rails [1.6.4]
+- Create Crafts & Additions [1.2.4]
+- Create Slice & Dice [3.2.3]
+- Create Deco [2.0.2]
+- Create Enchantment Industry Fabric [1.2.16]
+- Create Big Cannons [5.5.1]
+- SmartBrainLib [1.15] : Dependency mod of Happiness (is a) Warm Gun
+- AzureLib [2.0.34] : Dependency mod of Happiness (is a) Warm Gun
+- Happiness (is a) Warm Gun [2.0.2]
+- SuperMartijn642's Config Lib [1.1.8a] : Dependency mod of Better Archeology [1.2.1]
+- NiftyCarts [20.1.3]
 ## Mods Update ##
-- Amplified Nether: 1.2.3 → 1.2.5
-- Animal Feeding Trough: 1.0.3 → 1.1.0
-- Archers (RPG Series): 1.0.7 → 1.2.5
-- Architectury API: 9.1.13 → 9.2.14
-- Audaki Cart Engine: 2.0.6 → 3.1.1
-- AzureLib Armor: 2.0.3 → 2.0.6
-- Balm: 7.2.1 → 7.3.7
-- Better Archeology: 1.1.5 → 1.1.9
-- Better Combat: 1.8.4 → 1.8.6
-- BetterTrims: 2.2.3 → 2.3.1
-- Bookshelf: 20.1.9 → 20.2.13
-- Cobblemon: 1.4.1 → 1.5.2
-- Collective: 7.30 → 7.81
-- Combat Roll: 1.3.1 → 1.3.3
-- Conduits Prevent Drowned: 3.6 → 3.8
-- Crafting Tweaks: 18.2.2 → 18.2.5
-- Easy Anvils: 8.0.1 → 8.0.2
-- Enchanting Infuser: 8.0.2 → 8.0.3
-- Ender Zoology: 8.0.1 → 8.0.2
-- End Remastered: 5.2.3 → 5.2.4
-- Epic Knights: Shields Armors and Weapons: 8.2 → 9.8
-- Expanded Delight: 0.3.0.2 → 0.3.1
-- Fabric API: 0.92.0 → 0.92.2
-- Fabric Language Kotlin: 1.10.17 → 2.0.10
-- Fish of Thieves: 3.0.4 → 3.0.7
-- Friends&Foes (Fabric/Quilt): 2.0.9 → 2.0.16
-- Frostiful: 1.0.4 → 1.0.10
-- FrozenLib: 1.6.2 → 1.8
-- GeckoLib: 4.4.2 → 4.4.7
-- Hybrid Aquatic: 1.2.2 → 1.3.5
-- Illager Invasion: 8.0.4 → 8.0.5
-- Immersive Melodies: 0.1.0 → 0.3.0
-- Jewelry (RPG Series): 1.2.2 → 1.3.6
-- Legacy: [Let's Do] Bakery: 1.1.3 → 1.1.15
-- Linkart: 5.4.3 → 5.4.4
-- MC Dungeons Armos: 5.0.1 → 5.0.2
-- MC Dungeons Artifacts: 4.0.1 → 4.0.3
-- MC Dungeons Weapons: 9.0.1 → 9.0.4
-- Midas Hunger: 2.2.2 → 2.2.3
-- Moonlight Lib: 2.10.11 → 2.11.41
-- More Axolotl Variants API: 1.1.3 → 1.1.4
-- More Axolotl Vairants Mod: 1.2.4 → 1.2.6
-- More Mob Variants: 1.2.2 → 1.3.1
-- More Music Discs: 33 → 33.1
-- Mythic Metals: 0.19.3 → 0.19.9
-- No Hostiles Around Campfire: 5.7 → 7.1
-- Nullscape: 1.2.3 → 1.2.7
-- Paladins & Priests (RPG Series): 1.0.5 → 1.3.1
-- Pehkui: 3.7.12 → 3.8.3
-- Projectile Damage Attribute: 3.2.2 → 3.2.3
-- Puzzles Lib: 8.1.17 → 8.1.21
-- Realistic Bees: 3.5 → 4.0
-- Repurposed Structures: 7.1.1 → 7.1.15
-- Resourceful Lib: 2.1.16 → 2.1.28
-- Roughly Enough Items (REI): 12.0.684 → 12.1.750
-- Runes: 0.9.11 → 0.9.13
-- Simple Hats: 0.2.0 → 0.3.2
-- Simple Voice Chat: 2.4.32 → 2.5.20
-- Simply Swords: 1.54.0 → 1.55.0
-- Small Ships: 2.0.0-b1.1 → 2.0.0-b1.4
-- Spell Engine: 0.12.5 → 0.15.9 
-- Spell Power Attributes: 0.9.19 → 0.11.1
-- Starter Kit: 5.3 → 7.1
-- Supplementaries: 2.8.4 → 2.8.17
-- Tectonic: 2.2.1 → 2.3.5b
-- The Graveyard (FABRIC): 2.9 → 3.1
-- Thermoo: 2.1.2 → 2.3.2
-- Time & Wind: 1.4.7 → 1.4.8
-- Traveler's Backpack: 9.1.9 → 9.1.16
-- Traverse: 7.0.11 → 7.0.12
-- Trinkets: 3.7.1 → 3.7.2
-- Ube's Delight: 0.1.5b → 0.1.5.4
-- Villager Names: 7.0 → 8.1
-- VillagesPlus: 2.1 → 3.1
-- Waystones: 14.1.3 → 14.1.4
-- Wilder Wild: 2.3.2 → 2.4.6
-- Wizards (RPG Series): 1.0.5 → 1.3.0
-- YUNG's API: 4.0.3 → 4.0.5
-- YetAnotherConfigLib: 3.2.1 → 3.5.0
-- [Let's Do] API: 1.2.8 → 1.2.15
-- [Let's Do] Vinery: 1.4.11 → 1.4.28
+- Balm [7.3.7] → [7.3.9]
+- Better Archeology [1.1.9] → [1.2.1]
+- BetterTrims [2.3.1] → [2.3.2]
+- Coffins [1.3.0] → [1.4.0]
+- Collective [7.81] → [7.84]
+- Deeper and Darker [1.2.6] → [1.3.2]
+- Expanded Delight [0.3.1] → [0.3.2]
+- Fabric Language Kotlin [1.12.0] → [1.12.1]
+- Farmer's Delight Refabricated [2.1.2] → [2.1.6]
+- Friends&Foes (Fabric/Quilt) [2.0.1] → [2.0.17]
+- Frostiful [1.0.10] → [1.0.11]
+- GeckoLib [4.4.7] → [4.4.9]
+- Jewelry [1.3.6] → [1.3.7]
+- MC Dungeons Artifacts [4.0.3] → [4.0.4]
+- Simply Swords [1.55.0] → [1.56.0]
+- Spell Power Attributes [0.11.1] → [0.12.0]
+- Supplementaries [2.8.17]
+- Tectonic [2.3.5b] → [2.4.1b]
+- Waystones [14.1.4] → [14.1.5]
 ## Mods Removal ##
-- Farmers Delight: Deprecated.
-- Tree Harvester: No utilization.
-- Universal Graves: Not working.
-- Villagers: Far From Home: No utilization.
+- Wunderreich : Keeps crashing dedicated server.

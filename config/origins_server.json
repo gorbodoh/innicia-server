@@ -1019,7 +1019,7 @@
       "origins-plus-plus:goolien/gooey_skin": false,
       "origins-plus-plus:goolien/ignitable": false,
       "origins-plus-plus:goolien/no_lungs": true,
-      "origins-plus-plus:goolien/splat": true,
+      "origins-plus-plus:goolien/splat": false,
       "origins-plus-plus:goolien/sticky_grip": true,
       "origins-plus-plus:goolien/stomach_body": true,
       "origins-plus-plus:goolien/unwieldy": true

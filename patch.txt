@@ -16,9 +16,7 @@
 - Create Deco [2.0.2]
 - Create Enchantment Industry Fabric [1.2.16]
 - Create Big Cannons [5.5.1]
-- SmartBrainLib [1.15] : Dependency mod of Happiness (is a) Warm Gun
-- AzureLib [2.0.34] : Dependency mod of Happiness (is a) Warm Gun
-- Happiness (is a) Warm Gun [2.0.2]
+- [TaCZ] Timeless and Classics Zero [1.0.2-hotfix3]
 - SuperMartijn642's Config Lib [1.1.8a] : Dependency mod of Better Archeology [1.2.1]
 - NiftyCarts [20.1.3]
 ## Mods Update ##

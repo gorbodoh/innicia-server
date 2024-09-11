@@ -1,5 +1,5 @@
 {
-  "lastSavedVersion": "1.4.0",
+  "lastSavedVersion": "1.5.2",
   "maxPokemonLevel": 100,
   "maxPokemonFriendship": 255,
   "announceDropItems": true,
@@ -16,7 +16,6 @@
   "minimumDistanceBetweenEntities": 8.0,
   "maxNearbyBlocksHorizontalRange": 4,
   "maxNearbyBlocksVerticalRange": 2,
-  "maxHorizontalSpace": 6,
   "maxVerticalSpace": 8,
   "worldSliceDiameter": 8,
   "worldSliceHeight": 16,
@@ -64,5 +63,8 @@
   "defaultPasturedPokemonLimit": 16,
   "pastureBlockUpdateTicks": 40,
   "pastureMaxWanderDistance": 64,
-  "pastureMaxPerChunk": 4.0
+  "pastureMaxPerChunk": 4.0,
+  "maxInsertedFossilItems": 2,
+  "walkingInBattleAnimations": false,
+  "enableDebugKeys": false
 }

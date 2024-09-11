@@ -84,7 +84,7 @@
 			"maxLevel": 3,
 			"procChance": null
 		},
-		"BUZZY_BEE": {
+		"BUSY_BEE": {
 			"comment": null,
 			"offset": 0.0,
 			"isEnabled": true,
@@ -255,7 +255,7 @@
 			"maxLevel": 3,
 			"procChance": null
 		},
-		"POISONING": {
+		"JUNGLE_POISON": {
 			"comment": null,
 			"offset": 0.0,
 			"isEnabled": true,

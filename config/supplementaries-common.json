@@ -12,7 +12,6 @@
       "base_period": 78,
       "power_scaling": 2.0,
       "base_velocity_scaling": 5.0,
-      "velocity_changed_flag": true,
       "range": 5
     },
     "spring_launcher": {
@@ -44,6 +43,10 @@
       "spill_items": true,
       "fill_entities_below": false
     },
+    "crystal_display": {
+      "enabled": true,
+      "chaining": true
+    },
     "wind_vane": true,
     "clock_block": true,
     "redstone_illuminator": true,
@@ -52,7 +55,6 @@
     "gold_door": true,
     "gold_trapdoor": true,
     "lock_block": true,
-    "crystal_display": true,
     "relayer": true
   },
   "functional": {
@@ -167,7 +169,7 @@
     },
     "ash": {
       "enabled": true,
-      "ash_from_fire": true,
+      "ash_from_fire_chance": 1.0,
       "rain_wash_ash": true
     },
     "flag": {
@@ -209,7 +211,6 @@
     "blackstone_tile": true,
     "sconce": true,
     "sconce_lever": true,
-    "sconce_green": false,
     "pancake": true,
     "netherite_door": true,
     "netherite_trapdoor": true,

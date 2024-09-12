@@ -41,3 +41,4 @@
 - Waystones [14.1.4] → [14.1.5]
 ## Mods Removal ##
 - Wunderreich : Keeps crashing dedicated server.
+- Ender Dragon Fight Remastered : Swapped to True Ending: Ender Dragon Overhaul

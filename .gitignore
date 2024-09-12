@@ -1,4 +1,9 @@
 *.mrpack
 config/waystones-common.toml.bak1
-config/waystones-common.toml.bak2
+*.bak1
+*.bak2
+*.bak3
+*.ogg
+*.png
+*.lua
 *.zip

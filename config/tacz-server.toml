@@ -12,13 +12,13 @@
 [base_multiplier]
 	#All base damage number is multiplied by this factor
 	#Range: 0.0 ~ 1.7976931348623157E308
-	DamageBaseMultiplier = 0.5
+	DamageBaseMultiplier = 0.75
 	#All armor ignore damage number is multiplied by this factor
 	#Range: 0.0 ~ 1.7976931348623157E308
-	ArmorIgnoreBaseMultiplier = 0.5
+	ArmorIgnoreBaseMultiplier = 0.75
 	#All head shot damage number is multiplied by this factor
 	#Range: 0.0 ~ 1.7976931348623157E308
-	HeadShotBaseMultiplier = 0.5
+	HeadShotBaseMultiplier = 0.75
 
 [misc]
 	#The entity's head hitbox during the headshot

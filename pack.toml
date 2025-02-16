@@ -1,12 +1,12 @@
 name = "Innicia-Server"
 author = "_gorbodoh_"
-version = "3.0.0"
+version = "3.0.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "5ed476ecf942f267b918d7d40851ef868a90725329ca0b0935e87408db0e5002"
+hash = "70e88d6089676150d352dbf251edd7aece74c1e2f18a75f9e77d4bf300c6ecc9"
 
 [versions]
 fabric = "0.16.2"

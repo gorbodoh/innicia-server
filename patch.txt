@@ -1,44 +1,8 @@
-# Patch v3.0.0
-- The industrial revolution!
+# Patch v3.0.1
+- VC QoL
 ## New Mods ##
-- True Ending: Ender Dragon Overhaul [1.1.0c]
-- Beacon Overhaul [1.8.4]
-- More Totems of Undying [2.16.0]
-- Botarium [2.3.4] : Dependency mod of Ad Astra [1.15.18]
-- Ad Astra [1.15.18]
-- Immersive Aircraft [1.0.1]
-- Gazebos (RPG Series) [1.1.1]
-- Rogues & Warriors (RPG Series) [1.1.0]
-- Create Fabric [0.5.1.f]
-- Create: Steam 'n' Rails [1.6.4]
-- Create Crafts & Additions [1.2.4]
-- Create Slice & Dice [3.2.3]
-- Create Deco [2.0.2]
-- Create Enchantment Industry Fabric [1.2.16]
-- Create Big Cannons [5.5.1]
-- [TaCZ] Timeless and Classics Zero [1.0.2-hotfix3]
-- SuperMartijn642's Config Lib [1.1.8a] : Dependency mod of Better Archeology [1.2.1]
-- NiftyCarts [20.1.3]
+- Walkie-Talkie [1.3.0]
 ## Mods Update ##
-- Balm [7.3.7] → [7.3.9]
-- Better Archeology [1.1.9] → [1.2.1]
-- BetterTrims [2.3.1] → [2.3.2]
-- Coffins [1.3.0] → [1.4.0]
-- Collective [7.81] → [7.84]
-- Deeper and Darker [1.2.6] → [1.3.2]
-- Expanded Delight [0.3.1] → [0.3.2]
-- Fabric Language Kotlin [1.12.0] → [1.12.1]
-- Farmer's Delight Refabricated [2.1.2] → [2.1.6]
-- Friends&Foes (Fabric/Quilt) [2.0.1] → [2.0.17]
-- Frostiful [1.0.10] → [1.0.11]
-- GeckoLib [4.4.7] → [4.4.9]
-- Jewelry [1.3.6] → [1.3.7]
-- MC Dungeons Artifacts [4.0.3] → [4.0.4]
-- Simply Swords [1.55.0] → [1.56.0]
-- Spell Power Attributes [0.11.1] → [0.12.0]
-- Supplementaries [2.8.17]
-- Tectonic [2.3.5b] → [2.4.1b]
-- Waystones [14.1.4] → [14.1.5]
+- 
 ## Mods Removal ##
-- Wunderreich : Keeps crashing dedicated server.
-- Ender Dragon Fight Remastered : Swapped to True Ending: Ender Dragon Overhaul
+- 
